@@ -9,6 +9,16 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  experimental: {
+    typedRoutes: true,
+  },
+  reactStrictMode: true,
+  swcMinify: true,
+  output: "export",
+
+  pnpm: {
+    approveBuilds: true,
+  },
 }
 
 export default nextConfig
