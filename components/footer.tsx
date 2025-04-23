@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input"
 
 export default function Footer() {
   return (
-    <footer id="contact" className="bg-primary text-primary-foreground">
+    <footer id="contact" className="bg-gradient-primary text-primary-foreground">
       <div className="container px-4 py-12 md:px-6 md:py-16 lg:py-20">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">

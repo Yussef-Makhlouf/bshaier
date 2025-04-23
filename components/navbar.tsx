@@ -12,7 +12,7 @@ import Image from "next/image"
 export default function Navbar() {
   const isMobile = useMobile()
   const [isScrolled, setIsScrolled] = useState(false)
-  const [isSearchOpen, setIsSearchOpen] = useState(false)
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -79,27 +79,21 @@ export default function Navbar() {
               <Sheet>
                 <SheetTrigger asChild>
                   <Button variant="ghost" size="icon" className="relative">
-                    <Menu className="h-5 w-5" />
+                    <Menu className="h-5 w-5 " />
                     <span className="sr-only">فتح القائمة</span>
                   </Button>
                 </SheetTrigger>
-                <SheetContent side="right"  className="text-right p-0 w-[300px]">
+                <SheetContent side="right"  className="text-start p-0 w-[300px]">
                   <div className="flex flex-col h-full">
                     <div className="p-4 border-b bg-gradient-primary">
-                      <div className="flex items-center justify-between">
-                        <div className="font-bold text-xl text-primary-foreground flex items-center gap-2">
-                          <Image
-                            src="/logo.png"
-                            alt="شعار بشاير الخير"
-                            width={30}
-                            height={30}
-                            className="h-6 w-6"
-                          />
-                          <span>بشاير الخير</span>
+                      <div className="flex items-center justify-center">
+                        <div className="font-bold text-xl text-primary-foreground flex items-center  gap-2">
+                       
+                          <span >بشاير الخير</span>
                         </div>
                       </div>
                     </div>
-                    <nav className="flex flex-col gap-1 p-4 flex-1 overflow-auto">
+                    <nav className="flex flex-col gap-1 p-4 flex-1 overflow-auto items-start">
                       <Link
                         href="#"
                         className="flex items-center gap-2 justify-end p-3 rounded-md hover:bg-muted transition-colors"
@@ -136,42 +130,22 @@ export default function Navbar() {
                       >
                         مناطق الخدمة
                       </Link>
-                      <Link
-                        href="#testimonials"
-                        className="flex items-center gap-2 justify-end p-3 rounded-md hover:bg-muted transition-colors"
-                      >
-                        آراء العملاء
-                      </Link>
+           
                       <Link
                         href="tel:+96590905157"
                         className="flex items-center gap-2 justify-end p-3 rounded-md hover:bg-muted transition-colors"
                       >
                         طلب عرض سعر
                       </Link>
-                      <Link
-                        href="#partners"
-                        className="flex items-center gap-2 justify-end p-3 rounded-md hover:bg-muted transition-colors"
-                      >
-                        شركاؤنا
-                      </Link>
+              
                       <Link
                         href="#faq"
                         className="flex items-center gap-2 justify-end p-3 rounded-md hover:bg-muted transition-colors"
                       >
                         الأسئلة الشائعة
                       </Link>
-                      <Link
-                        href="#blog"
-                        className="flex items-center gap-2 justify-end p-3 rounded-md hover:bg-muted transition-colors"
-                      >
-                        المدونة
-                      </Link>
-                      <Link
-                        href="#contact"
-                        className="flex items-center gap-2 justify-end p-3 rounded-md hover:bg-muted transition-colors"
-                      >
-                        اتصل بنا
-                      </Link>
+                 
+              
                     </nav>
                     <div className="p-4 border-t bg-muted">
                       <div className="grid grid-cols-2 gap-2">
@@ -193,20 +167,17 @@ export default function Navbar() {
           ) : (
             <div className="flex items-center gap-4">
         
-              <nav className="flex items-center gap-1">
+              <nav className="flex items-center justify-start gap-1">
                 <Link href="#" className="px-3 py-2 text-sm font-medium rounded-md hover:bg-muted transition-colors">
                   الرئيسية
                 </Link>
-                <Link
-                  href="#services"
-                  className="px-3 py-2 text-sm font-medium rounded-md hover:bg-muted transition-colors"
-                >
-                  خدماتنا
+                <Link href="#about" className="px-3 py-2 text-sm font-medium rounded-md hover:bg-muted transition-colors">
+                  من نحن
                 </Link>
-                <Link
-                  href="#process"
-                  className="px-3 py-2 text-sm font-medium rounded-md hover:bg-muted transition-colors"
-                >
+                <Link href="#service-areas" className="px-3 py-2 text-sm font-medium rounded-md hover:bg-muted transition-colors">
+                  مناطق الخدمة
+                </Link>
+                <Link href="#process" className="px-3 py-2 text-sm font-medium rounded-md hover:bg-muted transition-colors">
                   مراحل العمل
                 </Link>
                 <DropdownMenu>
@@ -217,29 +188,10 @@ export default function Navbar() {
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end">
-                    <DropdownMenuItem asChild>
-                      <Link href="#about" className="w-full cursor-pointer text-right">
-                        من نحن
-                      </Link>
-                    </DropdownMenuItem>
+        
                     <DropdownMenuItem asChild>
                       <Link href="#why-choose-us" className="w-full cursor-pointer text-right">
                         لماذا تختارنا
-                      </Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link href="#service-areas" className="w-full cursor-pointer text-right">
-                        مناطق الخدمة
-                      </Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link href="#testimonials" className="w-full cursor-pointer text-right">
-                        آراء العملاء
-                      </Link>
-                    </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link href="#partners" className="w-full cursor-pointer text-right">
-                        شركاؤنا
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild>
@@ -247,25 +199,8 @@ export default function Navbar() {
                         الأسئلة الشائعة
                       </Link>
                     </DropdownMenuItem>
-                    <DropdownMenuItem asChild>
-                      <Link href="#blog" className="w-full cursor-pointer text-right">
-                        المدونة
-                      </Link>
-                    </DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
-                <Link
-                  href="tel:+96590905157"
-                  className="px-3 py-2 text-sm font-medium rounded-md hover:bg-muted transition-colors"
-                >
-                  طلب عرض سعر
-                </Link>
-                <Link
-                  href="#contact"
-                  className="px-3 py-2 text-sm font-medium rounded-md hover:bg-muted transition-colors"
-                >
-                  اتصل بنا
-                </Link>
               </nav>
               <Link
                   href="tel:+96590905157"
