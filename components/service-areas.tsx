@@ -13,7 +13,7 @@ const areas = [
   {
     id: "capital",
     name: "محافظة العاصمة",
-    description: "خدمات نقل العفش في محافظة العاصمة",
+    description: "خدمات نقل الأثاث في محافظة العاصمة",
     estimatedTime: "خلال 1-2 ساعة",
     neighborhoods: [
       "العديلية",
@@ -39,7 +39,7 @@ const areas = [
   {
     id: "hawalli",
     name: "محافظة حولي",
-    description: "خدمات نقل العفش في محافظة حولي",
+    description: "خدمات نقل الأثاث في محافظة حولي",
     estimatedTime: "خلال 1-2 ساعة",
     neighborhoods: [
       "حولي",
@@ -63,7 +63,7 @@ const areas = [
   {
     id: "ahmadi",
     name: "محافظة الأحمدي",
-    description: "خدمات نقل العفش في محافظة الأحمدي",
+    description: "خدمات نقل الأثاث في محافظة الأحمدي",
     estimatedTime: "خلال 2-3 ساعات",
     neighborhoods: [
       "الأحمدي",
@@ -89,7 +89,7 @@ const areas = [
   {
     id: "farwaniya",
     name: "محافظة الفروانية",
-    description: "خدمات نقل العفش في محافظة الفروانية",
+    description: "خدمات نقل الأثاث في محافظة الفروانية",
     estimatedTime: "خلال 1-2 ساعة",
     neighborhoods: [
       "الفروانية",
@@ -113,7 +113,7 @@ const areas = [
   {
     id: "jahra",
     name: "محافظة الجهراء",
-    description: "خدمات نقل العفش في محافظة الجهراء",
+    description: "خدمات نقل الأثاث في محافظة الجهراء",
     estimatedTime: "خلال 2-3 ساعات",
     neighborhoods: [
       "الجهراء",
@@ -135,7 +135,7 @@ const areas = [
   {
     id: "mubarak",
     name: "محافظة مبارك الكبير",
-    description: "خدمات نقل العفش في محافظة مبارك الكبير",
+    description: "خدمات نقل الأثاث في محافظة مبارك الكبير",
     estimatedTime: "خلال 1-2 ساعة",
     neighborhoods: [
       "مبارك الكبير",
@@ -203,7 +203,7 @@ export default function ServiceAreas() {
             نقدم خدماتنا في جميع مناطق الكويت
           </h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
-            نغطي جميع محافظات ومناطق الكويت بخدمات نقل العفش المتميزة
+            نغطي جميع محافظات ومناطق الكويت بخدمات نقل الأثاث المتميزة
           </p>
         </div>
 

@@ -60,7 +60,7 @@ export default function Navbar() {
               </div>
               <div className="flex flex-col justify-center">
                 <span className="text-primary leading-tight">بشاير الخير</span>
-                <span className="text-xs text-muted-foreground leading-tight">لنقل العفش</span>
+                <span className="text-xs text-muted-foreground leading-tight">لنقل الأثاث</span>
               </div>
             </Link>
           </div>

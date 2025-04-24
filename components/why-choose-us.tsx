@@ -125,7 +125,7 @@ export default function WhyChooseUs() {
                 <div>
                   <h4 className="font-bold text-lg">خبرة طويلة</h4>
                   <p className="text-muted-foreground">
-                    نتمتع بخبرة طويلة في مجال نقل العفش تمتد لأكثر من 10 سنوات في السوق الكويتي.
+                    نتمتع بخبرة طويلة في مجال نقل الأثاث تمتد لأكثر من 10 سنوات في السوق الكويتي.
                   </p>
                 </div>
               </div>
@@ -203,7 +203,7 @@ export default function WhyChooseUs() {
                 <div className="absolute top-0 right-8 text-6xl text-primary/20">"</div>
                 <blockquote className="text-center italic text-lg px-12">
                   <p className="mb-4">
-                    بشاير الخير أفضل شركة نقل عفش تعاملت معها. فريق محترف، أسعار منافسة، والتزام بالمواعيد. أنصح الجميع
+                    بشاير الخير أفضل شركة نقل أثاث تعاملت معها. فريق محترف، أسعار منافسة، والتزام بالمواعيد. أنصح الجميع
                     بالتعامل معهم.
                   </p>
                   <footer className="text-muted-foreground">

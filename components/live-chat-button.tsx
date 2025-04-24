@@ -47,7 +47,7 @@ export default function LiveChatButton() {
           </div>
           <div className="h-64 p-4 overflow-y-auto bg-muted/50">
             <div className="bg-primary text-primary-foreground p-3 rounded-lg rounded-tr-none max-w-[80%] mr-auto mb-4">
-              <p className="text-sm">مرحباً بك في بشاير الخير لنقل العفش! كيف يمكنني مساعدتك اليوم؟</p>
+              <p className="text-sm">مرحباً بك في بشاير الخير لنقل الأثاث! كيف يمكنني مساعدتك اليوم؟</p>
               <span className="text-xs opacity-70 block mt-1">10:30 صباحاً</span>
             </div>
           </div>

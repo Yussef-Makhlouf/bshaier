@@ -33,8 +33,8 @@ const steps = [
   },
   {
     id: "moving",
-    title: "نقل العفش",
-    description: "ننقل الأثاث باستخدام سيارات مخصصة ومجهزة لنقل العفش",
+    title: "نقل الأثاث",
+    description: "ننقل الأثاث باستخدام سيارات مخصصة ومجهزة لنقل الأثاث",
     icon: Truck,
     color: "text-secondary",
     bgColor: "bg-secondary/10",

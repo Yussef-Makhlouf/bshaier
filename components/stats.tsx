@@ -4,9 +4,9 @@ import Image from "next/image";
 
 const services = [
   {
-    title: "نقل عفش داخل الكويت",
+    title: "نقل أثاث داخل الكويت",
     description:
-      "خدمة نقل عفش آمنة وسريعة داخل جميع مناطق الكويت مع تغليف احترافي وضمان سلامة الأثاث.",
+      "خدمة نقل أثاث آمنة وسريعة داخل جميع مناطق الكويت مع تغليف احترافي وضمان سلامة الأثاث.",
     image:
       "./pro2.png",
   },
@@ -18,7 +18,7 @@ const services = [
       "./pro3.png",
   },
   {
-    title: "فك وتركيب العفش",
+    title: "فك وتركيب الأثاث",
     description:
       "فريق متخصص لفك وتركيب جميع أنواع الأثاث والمطابخ باحترافية عالية وسرعة في الإنجاز.",
     image:
@@ -37,7 +37,7 @@ export default function Stats() {
   return (
     <section className="py-12 bg-gray-50">
       <div className="container px-4 md:px-8 mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-10 text-primary">خدمات نقل العفش في الكويت</h2>
+        <h2 className="text-3xl font-bold text-center mb-10 text-primary">خدمات نقل الأثاث في الكويت</h2>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((service, idx) => (
             <div

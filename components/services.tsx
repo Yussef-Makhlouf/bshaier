@@ -12,10 +12,10 @@ const services = [
   {
     id: "moving",
     icon: Truck,
-    title: "نقل العفش",
+    title: "نقل الأثاث",
     shortDescription: "نقل الأثاث بأمان تام من وإلى جميع مناطق الكويت",
     longDescription:
-      "نوفر خدمة نقل العفش المنزلي والمكتبي بأحدث السيارات المجهزة خصيصاً لنقل الأثاث بأمان تام وبدون أي أضرار. فريقنا المدرب يضمن وصول أثاثك بحالة ممتازة إلى وجهتك الجديدة.",
+      "نوفر خدمة نقل الأثاث المنزلي والمكتبي بأحدث السيارات المجهزة خصيصاً لنقل الأثاث بأمان تام وبدون أي أضرار. فريقنا المدرب يضمن وصول أثاثك بحالة ممتازة إلى وجهتك الجديدة.",
     image: "/placeholder.svg?height=300&width=500",
     price: "تبدأ من 25 د.ك",
     duration: "2-4 ساعات",
@@ -135,9 +135,9 @@ export default function Services() {
           <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
             خدماتنا المميزة
           </div>
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">نقدم خدمات متكاملة لنقل العفش</h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">نقدم خدمات متكاملة لنقل الأثاث</h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
-            مجموعة متكاملة من خدمات نقل العفش بأعلى مستويات الجودة والاحترافية
+            مجموعة متكاملة من خدمات نقل الأثاث بأعلى مستويات الجودة والاحترافية
           </p>
         </div>
 

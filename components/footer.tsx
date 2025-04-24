@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="container px-4 py-12 md:px-6 md:py-16 lg:py-20">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
-            <h3 className="text-xl font-bold">بشاير الخير لنقل العفش</h3>
+            <h3 className="text-xl font-bold">بشاير الخير لنقل الأثاث</h3>
             <p className="max-w-xs">
               شركة متخصصة في نقل وتغليف الأثاث المنزلي والمكتبي في جميع أنحاء الكويت بأعلى مستويات الجودة والاحترافية.
             </p>
@@ -119,7 +119,7 @@ export default function Footer() {
         <div className="mt-12 border-t border-primary-foreground/20 pt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
             <p className="text-center md:text-right">
-              © {new Date().getFullYear()} بشاير الخير لنقل العفش. جميع الحقوق محفوظة.
+              © {new Date().getFullYear()} بشاير الخير لنقل الأثاث. جميع الحقوق محفوظة.
             </p>
             <div className="flex justify-center md:justify-start gap-4">
               <Link href="#" className="text-sm hover:underline">

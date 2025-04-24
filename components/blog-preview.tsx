@@ -14,8 +14,8 @@ const blogPosts = [
   },
   {
     id: 2,
-    title: "كيف تختار شركة نقل عفش موثوقة في الكويت",
-    excerpt: "دليل شامل لاختيار شركة نقل عفش موثوقة في الكويت، مع النقاط الهامة التي يجب مراعاتها قبل التعاقد.",
+    title: "كيف تختار شركة نقل أثاث موثوقة في الكويت",
+    excerpt: "دليل شامل لاختيار شركة نقل أثاث موثوقة في الكويت، مع النقاط الهامة التي يجب مراعاتها قبل التعاقد.",
     date: "3 مارس 2023",
     image: "/placeholder.svg?height=200&width=400",
     category: "دليل المستهلك",
@@ -38,7 +38,7 @@ export default function BlogPreview() {
           <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">المدونة</div>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">آخر المقالات والنصائح</h2>
           <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
-            اطلع على أحدث المقالات والنصائح المتعلقة بنقل العفش وترتيب المنزل
+            اطلع على أحدث المقالات والنصائح المتعلقة بنقل الأثاث وترتيب المنزل
           </p>
         </div>
 

@@ -11,7 +11,7 @@ import { ChevronLeft, ChevronRight, Truck, Package, Clock, Shield, MapPin, Check
 const slides = [
   {
     image: "/car.jpg",
-    title: "بشاير الخير لنقل العفش",
+    title: "بشاير الخير لنقل الأثاث",
     description: "خبراء نقل الأثاث منذ أكثر من 10 سنوات بأعلى مستويات الجودة والأمان في جميع أنحاء الكويت",
     highlightText: "فريق محترف",
   },

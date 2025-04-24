@@ -24,8 +24,8 @@ export default function ContactBanner() {
               />
             </div>
             <div>
-              <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">بشاير الخير لنقل العفش</h2>
-              <p className="text-muted-foreground">خدمة نقل عفش احترافية على مدار الساعة</p>
+              <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">بشاير الخير لنقل الأثاث</h2>
+              <p className="text-muted-foreground">خدمة نقل أثاث احترافية على مدار الساعة</p>
             </div>
           </div>
 
