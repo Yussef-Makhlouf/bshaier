@@ -20,9 +20,12 @@ export default function ServicesLayout({
         title="خدمات نقل الأثاث في الكويت - بشاير الخير لنقل العفش"
         description="تعرف على خدمات بشاير الخير المتكاملة لنقل الأثاث في الكويت: فك وتركيب وتغليف ونقل وتخزين الأثاث بأيدي فنيين محترفين وبأسعار تنافسية في جميع مناطق الكويت"
         keywords="خدمات نقل الأثاث, فك وتركيب الأثاث, تغليف الأثاث, تخزين الأثاث, نقل المكاتب, نقل عفش الكويت, شركة نقل أثاث, بشاير الخير"
-        canonicalUrl="https://bashir-mover.com/services"
+        canonicalUrl="https://www.bashir-mover.com/services"
         ogType="website"
         ogImage="/logo.png"
+        author="بشاير الخير لنقل الأثاث"
+        publisher="بشاير الخير لنقل الأثاث - Bashair Al-Khair Moving Company"
+        robots="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
       />
       <Navbar />
       <main className="min-h-screen ">
