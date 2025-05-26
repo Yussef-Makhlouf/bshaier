@@ -10,15 +10,15 @@ const nextConfig = {
     unoptimized: true,
   },
   experimental: {
-    typedRoutes: true,
+    amp: {
+      skipValidation: true
+    }
   },
+  trailingSlash: true,
   reactStrictMode: true,
-  swcMinify: true,
-  output: "export",
-
-  pnpm: {
-    approveBuilds: true,
-  },
+  
+  // Note: generateStaticParams is used in page components instead of exportPathMap
+  // for app directory compatibility
 }
 
 export default nextConfig

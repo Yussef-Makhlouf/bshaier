@@ -1,0 +1,25 @@
+# *
+User-agent: *
+Allow: /
+
+# Googlebot
+User-agent: Googlebot
+Allow: /*.js$
+Allow: /*.css$
+
+# Bingbot
+User-agent: Bingbot
+Allow: /*.js$
+Allow: /*.css$
+
+# Yandex
+User-agent: Yandex
+Allow: /*.js$
+Allow: /*.css$
+
+# Host
+Host: https://bashir-mover.com
+
+# Sitemaps
+Sitemap: https://bashir-mover.com/sitemap.xml
+

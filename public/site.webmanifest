@@ -1,0 +1,142 @@
+{
+  "name": "بشاير الخير لنقل الأثاث في الكويت",
+  "short_name": "بشاير الخير",
+  "description": "أفضل شركة نقل عفش في الكويت ✓ خدمة 24 ساعة ✓ أسعار تنافسية ✓ فك وتركيب وتغليف احترافي ✓ نقل آمن وسريع لجميع محافظات الكويت بدون تكسير",
+  "categories": ["moving", "furniture", "services", "kuwait", "relocation", "packing"],
+  "url": "https://bashir-mover.com",
+  "telephone": "+96590905157",
+  "address": {
+    "streetAddress": "الكويت",
+    "addressLocality": "الكويت",
+    "addressRegion": "الكويت",
+    "addressCountry": "KW"
+  },
+  "geo": {
+    "latitude": 29.375859,
+    "longitude": 47.977405
+  },
+  "business_type": "MovingCompany",
+  "keywords": ["نقل عفش الكويت", "شركة نقل اثاث", "فك وتركيب", "تغليف اثاث", "نقل عفش رخيص", "تخزين اثاث", "نقل عفش السالمية", "نقل عفش حولي", "نقل عفش الفروانية", "نقل عفش الجهراء", "نقل عفش الأحمدي"],
+  "openingHours": [
+    "Sunday 00:00-23:59",
+    "Monday 00:00-23:59",
+    "Tuesday 00:00-23:59",
+    "Wednesday 00:00-23:59",
+    "Thursday 00:00-23:59",
+    "Friday 00:00-23:59",
+    "Saturday 00:00-23:59"
+  ],
+  "priceRange": "$$",
+  
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui", "browser"],
+  "background_color": "#ffffff",
+  "theme_color": "#4a90e2",
+  "orientation": "any",
+  "screenshots": [
+    {
+      "src": "/screenshot-1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "شركة بشاير الخير - الصفحة الرئيسية"
+    },
+    {
+      "src": "/screenshot-2.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "خدمات نقل الأثاث - بشاير الخير"
+    },
+    {
+      "src": "/screenshot-3.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "خدمات فك وتركيب وتغليف الأثاث"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "apple-touch-icon"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "اتصل بنا",
+      "short_name": "اتصل",
+      "description": "اتصل بنا لطلب خدمة نقل الأثاث",
+      "url": "/contact",
+      "icons": [{ "src": "/contact-icon.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "خدماتنا",
+      "short_name": "خدمات",
+      "description": "تعرف على خدمات نقل الأثاث التي نقدمها",
+      "url": "/services",
+      "icons": [{ "src": "/services-icon.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "طلب تسعيرة",
+      "short_name": "تسعيرة",
+      "description": "احصل على تسعيرة مجانية لنقل الأثاث",
+      "url": "/#quote",
+      "icons": [{ "src": "/quote-icon.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "تواصل عبر واتساب",
+      "short_name": "واتساب",
+      "description": "تواصل معنا مباشرة عبر واتساب",
+      "url": "https://wa.me/96590905157",
+      "icons": [{ "src": "/whatsapp-icon.png", "sizes": "192x192" }]
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://bashir-mover.com/manifest.json"
+    }
+  ],
+  "lang": "ar-KW",
+  "dir": "rtl",
+  "prefer_related_applications": false,
+  "iarc_rating_id": "",
+  "serviceworker": {
+    "src": "/sw.js",
+    "scope": "/",
+    "use_cache": true
+  }
+}

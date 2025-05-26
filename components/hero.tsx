@@ -11,21 +11,33 @@ import { ChevronLeft, ChevronRight, Truck, Package, Clock, Shield, MapPin, Check
 const slides = [
   {
     image: "/car.jpg",
-    title: "بشاير الخير لنقل الأثاث",
-    description: "خبراء نقل الأثاث منذ أكثر من 10 سنوات بأعلى مستويات الجودة والأمان في جميع أنحاء الكويت",
-    highlightText: "فريق محترف",
+    title: "بشاير الخير لنقل الأثاث والعفش في الكويت",
+    description: "أفضل شركة نقل عفش في الكويت بخبرة 10 سنوات وفريق محترف من النجارين والفنيين لنقل الأثاث المنزلي بأمان وضمان عدم التلف",
+    highlightText: "أفضل شركة نقل عفش",
   },
   {
     image: "/car2.jpg",
-    title: "خدمات نقل وتغليف متكاملة",
-    description: "نقدم خدمات فك وتركيب وتغليف الأثاث بأيدي فنيين محترفين وباستخدام أفضل مواد التغليف",
-    highlightText: "خدمة متكاملة",
+    title: "خدمات فك وتركيب وتغليف الأثاث المتكاملة",
+    description: "نقدم خدمات فك وتركيب غرف النوم والمطابخ والستائر وتغليف الأثاث الزجاجي والخشبي بأفضل مواد التغليف وبأيدي فنيين متخصصين",
+    highlightText: "فك وتركيب وتغليف",
   },
   {
     image: "/car3.jpg",
-    title: "خدمة على مدار الساعة",
-    description: "نقدم خدماتنا في جميع أنحاء الكويت على مدار الساعة طوال أيام الأسبوع",
-    highlightText: "24/7",
+    title: "خدمة نقل عفش 24 ساعة في جميع مناطق الكويت",
+    description: "نقدم خدمات نقل العفش في جميع محافظات الكويت: العاصمة، حولي، الفروانية، الأحمدي، الجهراء، ومبارك الكبير بأسعار تنافسية وخدمة على مدار الساعة",
+    highlightText: "خدمة 24 ساعة",
+  },
+  {
+    image: "/car3.jpg",
+    title: "تخزين الأثاث والعفش بضمان في الكويت",
+    description: "نوفر مستودعات آمنة لتخزين الأثاث والعفش لفترات قصيرة وطويلة مع ضمان الحماية من الرطوبة والحشرات وأنظمة مراقبة على مدار الساعة",
+    highlightText: "تخزين آمن بضمان",
+  },
+  {
+    image: "/car2.jpg",
+    title: "أسعار تنافسية لنقل العفش في الكويت",
+    description: "نقدم أرخص الأسعار لخدمات نقل الأثاث والعفش مع عروض وخصومات خاصة للمنازل والفلل والمكاتب والشركات. اتصل الآن للحصول على عرض سعر مجاني",
+    highlightText: "أرخص الأسعار",
   },
 ]
 
@@ -128,7 +140,7 @@ export default function Hero() {
             <div className="inline-block bg-primary px-4 py-1 rounded-full text-primary-foreground text-sm font-medium mb-4 animate-fade-in">
               {slides[currentSlide].highlightText}
             </div>
-            <h1 className="text-3xl font-semibold tracking-tighter sm:text-5xl md:text-6xl lg:text-6xl mb-6 animate-fade-in text-shadow">
+            <h1 className="text-2xl font-semibold tracking-tighter sm:text-5xl md:text-4xl lg:text-4xl mb-6 leading-tight animate-fade-in text-shadow">
               {slides[currentSlide].title}
             </h1>
             <p className="text-xl md:text-2xl mb-8 animate-fade-in stagger-1 text-shadow opacity-90">
@@ -154,7 +166,6 @@ export default function Hero() {
 
             {/* Trusted by */}
             <div className="mt-10 animate-fade-in stagger-3">
-              <p className="text-sm mb-3 opacity-80">خدمنا أكثر من 5000+ عميل بنجاح</p>
               <div className="flex items-center justify-center gap-4">
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg px-3 py-1 flex items-center">
                   <CheckCircle className="h-4 w-4 text-secondary ml-1" />
@@ -174,7 +185,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Features */}
+
 
       {/* Slider controls */}
       <button

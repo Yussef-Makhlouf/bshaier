@@ -101,7 +101,7 @@ export default function Navbar() {
                         الرئيسية
                       </Link>
                       <Link
-                        href="#services"
+                        href="/services"
                         className="flex items-center gap-2 justify-end p-3 rounded-md hover:bg-muted transition-colors"
                       >
                         خدماتنا
@@ -125,7 +125,7 @@ export default function Navbar() {
                         لماذا تختارنا
                       </Link>
                       <Link
-                        href="#service-areas"
+                        href="/areas"
                         className="flex items-center gap-2 justify-end p-3 rounded-md hover:bg-muted transition-colors"
                       >
                         مناطق الخدمة
@@ -171,10 +171,10 @@ export default function Navbar() {
                 <Link href="#" className="px-3 py-2 text-sm font-medium rounded-md hover:bg-muted transition-colors">
                   الرئيسية
                 </Link>
-                <Link href="#about" className="px-3 py-2 text-sm font-medium rounded-md hover:bg-muted transition-colors">
-                  من نحن
+                <Link href="/services" className="px-3 py-2 text-sm font-medium rounded-md hover:bg-muted transition-colors">
+                  خدماتنا
                 </Link>
-                <Link href="#service-areas" className="px-3 py-2 text-sm font-medium rounded-md hover:bg-muted transition-colors">
+                <Link href="/areas" className="px-3 py-2 text-sm font-medium rounded-md hover:bg-muted transition-colors">
                   مناطق الخدمة
                 </Link>
                 <Link href="#process" className="px-3 py-2 text-sm font-medium rounded-md hover:bg-muted transition-colors">
