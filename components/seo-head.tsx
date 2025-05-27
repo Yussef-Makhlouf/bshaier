@@ -149,7 +149,7 @@ const SEOHead: React.FC<SEOProps> = ({
       <meta name="googlebot-image" content="index, follow" />
       <meta name="googlebot-video" content="index, follow" />
       <meta name="googlebot-local" content="index, follow" />
-      <meta name="canonical" content={canonicalUrl} />
+      {/* Canonical URL is already defined above */}
       {/* Additional SEO Enhancements */}
       {/* <meta name="revisit-after" content="7 days" /> */}
       <meta name="rating" content="general" />

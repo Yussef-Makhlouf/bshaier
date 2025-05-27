@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { MapPin, Phone, ArrowRight, Clock, CheckCircle } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import SEOHead from "@/components/seo-head"
 
 // Kuwait areas data with detailed descriptions for SEO
 const areas = [
@@ -33,9 +34,10 @@ const areas = [
       "الشويخ",
     ],
     specialNotes: "نقدم خدمات سريعة في محافظة العاصمة مع إمكانية الوصول في نفس اليوم",
-    image: "/areas/capital.jpg",
+    image: "/areas/capital.png",
     color: "#1a56db",
     slug: "capital",
+    canonicalUrl: "https://www.bashir-mover.com/areas/capital",
   },
   {
     id: "hawalli",
@@ -59,9 +61,10 @@ const areas = [
       "الشهداء",
     ],
     specialNotes: "نقدم خدمات خاصة للشقق في الأبراج العالية في منطقة السالمية",
-    image: "/areas/hawalli.jpg",
+    image: "/areas/hawalli.png",
     color: "#2563eb",
     slug: "hawalli",
+    canonicalUrl: "https://www.bashir-mover.com/areas/hawalli",
   },
   {
     id: "ahmadi",
@@ -87,10 +90,11 @@ const areas = [
       "الصباحية",
     ],
     specialNotes: "نقدم خدمات خاصة للمناطق البعيدة في محافظة الأحمدي مثل الوفرة والخيران",
-    image: "/areas/ahmadi.jpg",
+    image: "/areas/ahmadi.png",
     color: "#3b82f6",
     slug: "ahmadi",
-  },
+    canonicalUrl: "https://www.bashir-mover.com/areas/ahmadi",
+    },
   {
     id: "farwaniya",
     name: "محافظة الفروانية",
@@ -113,9 +117,10 @@ const areas = [
       "الأفنيوز",
     ],
     specialNotes: "نقدم خدمات سريعة في محافظة الفروانية مع مراعاة خاصة للمناطق المزدحمة",
-    image: "/areas/farwaniya.jpg",
+    image: "/areas/farwaniya.png",
     color: "#60a5fa",
     slug: "farwaniya",
+    canonicalUrl: "https://www.bashir-mover.com/areas/farwaniya",
   },
   {
     id: "jahra",
@@ -137,9 +142,10 @@ const areas = [
       "العبدلي",
     ],
     specialNotes: "نقدم خدمات خاصة للمناطق البعيدة في محافظة الجهراء مثل العبدلي وكبد",
-    image: "/areas/jahra.jpg",
+    image: "/areas/jahra.png",
     color: "#93c5fd",
     slug: "jahra",
+    canonicalUrl: "https://www.bashir-mover.com/areas/jahra",
   },
   {
     id: "mubarak",
@@ -160,9 +166,10 @@ const areas = [
       "صباح السالم",
     ],
     specialNotes: "نقدم خدمات متميزة في محافظة مبارك الكبير مع إمكانية الوصول في نفس اليوم",
-    image: "/areas/mubarak.jpg",
+    image: "/areas/mubarak.png",
     color: "#bfdbfe",
     slug: "mubarak",
+    canonicalUrl: "https://www.bashir-mover.com/areas/mubarak",
   },
 ]
 
@@ -175,6 +182,17 @@ export default function AreasPage() {
 
   return (
     <div className="bg-gradient-to-b from-background to-muted">
+      <SEOHead
+        title="مناطق خدمة نقل الأثاث في الكويت - بشاير الخير لنقل العفش"
+        description="نقدم خدمات نقل الأثاث في جميع مناطق الكويت: العاصمة، حولي، الفروانية، الأحمدي، الجهراء، مبارك الكبير. خدمة سريعة، أسعار تنافسية، وفريق محترف"
+        keywords="نقل عفش الكويت, نقل اثاث العاصمة, نقل عفش حولي, نقل اثاث الفروانية, نقل عفش الأحمدي, نقل اثاث الجهراء, نقل عفش مبارك الكبير, شركة نقل أثاث"
+        canonicalUrl="https://www.bashir-mover.com/areas"
+        ogType="website"
+        ogImage="/logo.png"
+        author="بشاير الخير لنقل الأثاث"
+        publisher="بشاير الخير لنقل الأثاث - Bashair Al-Khair Moving Company"
+        robots="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+      />
       {/* Hero Section */}
       <section className="pb-16 md:pb-24 bg-gradient-to-b from-primary/10 to-background">
         <div className="container px-4 md:px-6">
@@ -205,66 +223,7 @@ export default function AreasPage() {
         </div>
       </section>
 
-      {/* Kuwait Map Section */}
-      <section className="pb-16 md:pb-24 bg-muted/30">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">خريطة مناطق الخدمة</h2>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
-              نقدم خدماتنا في جميع محافظات الكويت الست: العاصمة، حولي، الفروانية، الأحمدي، الجهراء، ومبارك الكبير
-            </p>
-          </div>
 
-          <div className="relative w-full max-w-4xl mx-auto aspect-[4/3] md:aspect-[16/9] bg-muted rounded-xl overflow-hidden shadow-lg">
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/80 z-10"></div>
-            <Image
-              src="/kuwait-map.jpg"
-              alt="خريطة الكويت"
-              fill
-              className="object-cover"
-            />
-            
-            {/* Interactive map points */}
-            {areas.map((area) => (
-              <Link 
-                key={area.id}
-                href={`/areas/${area.slug}`}
-                className="absolute z-20 group"
-                style={{ 
-                  top: area.id === "capital" ? "15%" : 
-                       area.id === "hawalli" ? "35%" : 
-                       area.id === "ahmadi" ? "80%" : 
-                       area.id === "farwaniya" ? "45%" : 
-                       area.id === "jahra" ? "10%" : 
-                       "75%",
-                  right: area.id === "capital" ? "48%" : 
-                        area.id === "hawalli" ? "70%" : 
-                        area.id === "ahmadi" ? "65%" : 
-                        area.id === "farwaniya" ? "20%" : 
-                        area.id === "jahra" ? "10%" : 
-                        "25%",
-                }}
-              >
-                <div className="relative">
-                  <div 
-                    className="h-6 w-6 rounded-full animate-ping absolute"
-                    style={{ backgroundColor: area.color }}
-                  ></div>
-                  <div 
-                    className="h-6 w-6 rounded-full flex items-center justify-center relative z-10 transition-transform group-hover:scale-125"
-                    style={{ backgroundColor: area.color }}
-                  >
-                    <MapPin className="h-4 w-4 text-white" />
-                  </div>
-                  <div className="absolute top-full right-1/2 transform translate-x-1/2 mt-2 bg-background/90 backdrop-blur-sm px-3 py-1.5 rounded-lg shadow-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">
-                    <p className="font-bold text-sm">{area.name}</p>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* All Areas Section */}
       <section id="all-areas" className="py-16 md:py-24">
@@ -278,8 +237,8 @@ export default function AreasPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {areas.map((area) => (
-              <Card key={area.id} className={`overflow-hidden transition-all duration-300 hover:shadow-lg ${isVisible ? "animate-fade-in" : "opacity-0"}`}>
-                <div className="aspect-video relative overflow-hidden">
+              <Card key={area.id} className={`overflow-hidden transition-all duration-300 border-2 border-primary/20 hover:border-primary ${isVisible ? "animate-fade-in" : "opacity-0"}`}>
+                <div className="aspect-video relative overflow-hidden rounded-t-lg">
                   <Image
                     src={area.image}
                     alt={area.name}
@@ -287,17 +246,17 @@ export default function AreasPage() {
                     className="object-cover transition-transform duration-300 hover:scale-105"
                   />
                   <div 
-                    className="absolute top-0 left-0 w-full h-full opacity-20"
-                    style={{ backgroundColor: area.color }}
+                    className="absolute top-0 left-0 w-full h-full opacity-10"
+                    style={{ backgroundColor: "#3b82f6" }}
                   ></div>
-                  <div className="absolute top-4 right-4 px-3 py-1 rounded-full text-sm text-white" style={{ backgroundColor: area.color }}>
+                  <div className="absolute top-4 right-4 px-3 py-1 rounded-full text-sm text-white backdrop-blur-sm" style={{ backgroundColor: "#3b82f6" }}>
                     {area.estimatedTime}
                   </div>
                 </div>
-                <CardHeader>
+                <CardHeader className="border-b border-muted pb-4">
                   <div className="flex items-center gap-3 mb-2">
-                    <div className="p-2 rounded-full" style={{ backgroundColor: `${area.color}20` }}>
-                      <MapPin className="h-5 w-5" style={{ color: area.color }} />
+                    <div className="p-2 rounded-full" style={{ backgroundColor: "#3b82f610" }}>
+                      <MapPin className="h-5 w-5 text-primary" />
                     </div>
                     <CardTitle>{area.name}</CardTitle>
                   </div>
@@ -309,28 +268,26 @@ export default function AreasPage() {
                     <span className="text-sm text-muted-foreground">{area.estimatedTime}</span>
                   </div>
                   <p className="text-muted-foreground mb-4 line-clamp-3">{area.longDescription}</p>
-                  <div className="flex flex-wrap gap-2 mb-4">
+                  <div className="flex flex-wrap gap-2 mb-4 mt-2">
                     {area.neighborhoods.slice(0, 5).map((neighborhood, index) => (
                       <span 
                         key={index} 
-                        className="inline-block px-2 py-1 text-xs rounded-full"
-                        style={{ backgroundColor: `${area.color}15`, color: area.color }}
+                        className="inline-block px-2 py-1 text-xs rounded-full border border-primary/30 text-primary transition-colors duration-200 hover:bg-primary/10"
                       >
                         {neighborhood}
                       </span>
                     ))}
                     {area.neighborhoods.length > 5 && (
                       <span 
-                        className="inline-block px-2 py-1 text-xs rounded-full"
-                        style={{ backgroundColor: `${area.color}15`, color: area.color }}
+                        className="inline-block px-2 py-1 text-xs rounded-full border border-primary/30 text-primary transition-colors duration-200 hover:bg-primary/10"
                       >
                         +{area.neighborhoods.length - 5}
                       </span>
                     )}
                   </div>
                 </CardContent>
-                <CardFooter>
-                  <Button asChild className="w-full gap-2" style={{ backgroundColor: area.color, color: "white" }}>
+                <CardFooter className="pt-2 border-t border-muted">
+                  <Button asChild className="w-full gap-2 transition-all duration-300 hover:scale-[1.02]">
                     <Link href={`/areas/${area.slug}`}>
                       تفاصيل المنطقة
                       <ArrowRight className="h-4 w-4" />
@@ -357,7 +314,7 @@ export default function AreasPage() {
 
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {/* خدمة فك وتركيب الأثاث */}
-      <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
+      <Card className="overflow-hidden transition-all duration-300 border-2 border-primary/20 hover:border-primary/50">
         <CardHeader>
           <div className="flex items-center gap-3 mb-2">
             <div className="p-2 rounded-full bg-primary/10">
@@ -401,7 +358,7 @@ export default function AreasPage() {
       </Card>
 
       {/* خدمة تغليف الأثاث */}
-      <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
+      <Card className="overflow-hidden transition-all duration-300 border-2 border-primary/20 hover:border-primary/50">
         <CardHeader>
           <div className="flex items-center gap-3 mb-2">
             <div className="p-2 rounded-full bg-primary/10">
@@ -445,7 +402,7 @@ export default function AreasPage() {
       </Card>
 
       {/* خدمة نقل الأثاث */}
-      <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
+      <Card className="overflow-hidden transition-all duration-300 border-2 border-primary/20 hover:border-primary/50">
         <CardHeader>
           <div className="flex items-center gap-3 mb-2">
             <div className="p-2 rounded-full bg-primary/10">
@@ -491,7 +448,7 @@ export default function AreasPage() {
 
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
       {/* خدمة تخزين الأثاث */}
-      <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
+      <Card className="overflow-hidden transition-all duration-300 border-2 border-primary/20 hover:border-primary/50">
         <CardHeader>
           <div className="flex items-center gap-3 mb-2">
             <div className="p-2 rounded-full bg-primary/10">
@@ -535,7 +492,7 @@ export default function AreasPage() {
       </Card>
 
       {/* خدمة نقل المكاتب */}
-      <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
+      <Card className="overflow-hidden transition-all duration-300 border-2 border-primary/20 hover:border-primary/50">
         <CardHeader>
           <div className="flex items-center gap-3 mb-2">
             <div className="p-2 rounded-full bg-primary/10">
@@ -579,7 +536,7 @@ export default function AreasPage() {
       </Card>
 
       {/* خدمة نقل المقتنيات الثمينة */}
-      <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg">
+      <Card className="overflow-hidden transition-all duration-300 border-2 border-primary/20 hover:border-primary/50">
         <CardHeader>
           <div className="flex items-center gap-3 mb-2">
             <div className="p-2 rounded-full bg-primary/10">
@@ -767,7 +724,7 @@ export default function AreasPage() {
         </div>
         <div className="relative aspect-video md:aspect-square rounded-xl overflow-hidden shadow-lg">
           <Image
-            src="/areas/capital-detailed.jpg"
+            src="/areas/car4.jpg"
             alt="نقل الأثاث في محافظة العاصمة"
             fill
             className="object-cover"
@@ -783,7 +740,7 @@ export default function AreasPage() {
       <div className="grid md:grid-cols-2 gap-8 items-center">
         <div className="order-2 md:order-1 relative aspect-video md:aspect-square rounded-xl overflow-hidden shadow-lg">
           <Image
-            src="/areas/hawalli-detailed.jpg"
+            src="/areas/car2.jpg"
             alt="نقل الأثاث في محافظة حولي"
             fill
             className="object-cover"

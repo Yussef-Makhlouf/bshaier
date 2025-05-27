@@ -50,6 +50,19 @@ export default function AMP() {
         <title>بشاير الخير لنقل الأثاث - خدمات نقل الأثاث المميزة في جميع مناطق الكويت</title>
         <meta name="description" content="أفضل شركة نقل عفش في الكويت ✓ خدمة 24 ساعة ✓ أسعار تنافسية ✓ فك وتركيب وتغليف احترافي ✓ نقل آمن وسريع لجميع مناطق الكويت" />
         <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="بشاير الخير" />
+        <meta name="keywords" content="نقل أثاث, نقل اثاث, شركة نقل أثاث الكويت, فك وتركيب اثاث, تغليف اثاث, تخزين اثاث, نقل أثاث رخيص, افضل شركة نقل أثاث" />
+        <meta name="theme-color" content="#4a90e2" />
+        <meta name="og:title" content="بشاير الخير لنقل الأثاث - خدمات نقل الأثاث المميزة في جميع مناطق الكويت" />
+        <meta name="og:description" content="أفضل شركة نقل عفش في الكويت ✓ خدمة 24 ساعة ✓ أسعار تنافسية ✓ فك وتركيب وتغليف احترافي ✓ نقل آمن وسريع لجميع مناطق الكويت" />
+        <meta name="og:type" content="website" />
+        <meta name="og:url" content="https://bashir-mover.com" />
+        <meta name="og:image" content="https://bashir-mover.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="بشاير الخير لنقل الأثاث - خدمات نقل الأثاث المميزة في جميع مناطق الكويت" />
+        <meta name="twitter:description" content="أفضل شركة نقل عفش في الكويت ✓ خدمة 24 ساعة ✓ أسعار تنافسية ✓ فك وتركيب وتغليف احترافي ✓ نقل آمن وسريع لجميع مناطق الكويت" />
+        <meta name="twitter:image" content="https://bashir-mover.com/og-image.jpg" />
         <link rel="canonical" href="https://bashir-mover.com" />
         <style amp-boilerplate="">{`body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}`}</style>
         <noscript>

@@ -16,7 +16,7 @@ const services = [
     shortDescription: "نقل الأثاث بأمان تام من وإلى جميع مناطق الكويت",
     longDescription:
       "نوفر خدمة نقل الأثاث المنزلي والمكتبي بأحدث السيارات المجهزة خصيصاً لنقل الأثاث بأمان تام وبدون أي أضرار. فريقنا المدرب يضمن وصول أثاثك بحالة ممتازة إلى وجهتك الجديدة. نمتلك أسطول من السيارات المختلفة الأحجام لتناسب جميع احتياجات النقل، سواء كان منزل صغير أو فيلا كبيرة. نضمن لك خدمة سريعة ودقيقة مع الالتزام بالمواعيد المحددة.",
-    image: "/services/moving.jpg",
+    image: "/services/moving.png",
     price: "تبدأ من 25 د.ك",
     duration: "2-4 ساعات",
     rating: 5,
@@ -31,7 +31,7 @@ const services = [
     shortDescription: "تغليف احترافي للأثاث لحمايته من الخدوش والكسر",
     longDescription:
       "نستخدم أفضل مواد التغليف لحماية الأثاث من الخدوش والكسر أثناء عملية النقل، مع اهتمام خاص بالقطع الثمينة والحساسة. نوفر مواد تغليف عالية الجودة تضمن سلامة أثاثك. نقوم بتغليف كل قطعة بشكل منفصل مع مراعاة طبيعتها، سواء كانت زجاجية أو خشبية أو إلكترونية. نستخدم الكرتون المقوى، البلاستيك الفقاعي، الإسفنج، وأغطية خاصة للمفروشات والأجهزة الإلكترونية.",
-    image: "/services/packing.jpg",
+    image: "/services/packing.png",
     price: "تبدأ من 15 د.ك",
     duration: "1-3 ساعات",
     rating: 4.9,
@@ -46,7 +46,7 @@ const services = [
     shortDescription: "فك وتركيب جميع أنواع الأثاث بأيدي فنيين محترفين",
     longDescription:
       "يقوم فريقنا المتخصص بفك وتركيب جميع أنواع الأثاث المنزلي والمكتبي بمهارة عالية وخبرة كبيرة تضمن سلامة قطع الأثاث. نتعامل مع جميع أنواع الأثاث من مختلف الشركات العالمية. لدينا خبرة في فك وتركيب غرف النوم، المطابخ، خزائن الملابس، الستائر، الثريات، وحدات التلفزيون، وجميع أنواع الأثاث الآخر. نستخدم أدوات حديثة ومتطورة لضمان عدم تلف أي قطعة أثناء عملية الفك والتركيب.",
-    image: "/services/assembly.jpg",
+    image: "/services/assembly.png",
     price: "تبدأ من 20 د.ك",
     duration: "2-5 ساعات",
     rating: 4.8,
@@ -61,7 +61,7 @@ const services = [
     shortDescription: "تخزين آمن للأثاث في مستودعات مؤمنة ومكيفة",
     longDescription:
       "نوفر خدمة تخزين الأثاث في مستودعات آمنة ومكيفة لحماية الأثاث من العوامل الجوية والرطوبة لفترات قصيرة أو طويلة. مستودعاتنا مجهزة بأنظمة أمان متطورة وأنظمة مكافحة الحرائق. نقوم بتغليف الأثاث بشكل خاص قبل التخزين لحمايته من الغبار والحشرات. كما نوفر خدمة التأمين على الأثاث المخزن ضد السرقة والحرائق. يمكنك الوصول إلى أثاثك المخزن في أي وقت بعد التنسيق المسبق.",
-    image: "/services/storage.jpg",
+    image: "/services/storage.png",
     price: "تبدأ من 30 د.ك شهرياً",
     duration: "حسب الطلب",
     rating: 4.7,
@@ -76,7 +76,7 @@ const services = [
     shortDescription: "خدمات متكاملة لنقل المكاتب والشركات بدون انقطاع للعمل",
     longDescription:
       "نقدم خدمات متخصصة لنقل المكاتب والشركات مع مراعاة خصوصية العمل وضمان عدم انقطاع سير العمل. نقوم بالتخطيط المسبق لعملية النقل لضمان سرعة الإنجاز وتقليل وقت التوقف. نتعامل مع المعدات المكتبية الحساسة مثل أجهزة الكمبيوتر والطابعات والخوادم بعناية فائقة. نقوم بترقيم وتوثيق جميع المحتويات لضمان إعادة ترتيبها بنفس الطريقة في المكان الجديد. يمكننا العمل خارج أوقات الدوام الرسمي لتقليل تأثير النقل على سير العمل.",
-    image: "/services/office.jpg",
+    image: "/services/office.png",
     price: "حسب حجم المكتب",
     duration: "1-3 أيام",
     rating: 4.9,
@@ -160,9 +160,7 @@ export default function ServicesPage() {
                     fill
                     className="object-cover transition-transform duration-300 hover:scale-105"
                   />
-                  <div className="absolute top-4 right-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm">
-                    {service.price}
-                  </div>
+                 
                 </div>
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-2">
@@ -185,16 +183,7 @@ export default function ServicesPage() {
                     <span className="text-sm text-muted-foreground mr-1">({service.reviewCount} تقييم)</span>
                   </div>
                   <p className="text-muted-foreground mb-4 line-clamp-3">{service.longDescription}</p>
-                  <div className="grid grid-cols-2 gap-2 mb-4">
-                    <div className="bg-muted rounded-lg p-2 text-center">
-                      <p className="text-xs text-muted-foreground">السعر</p>
-                      <p className="font-bold text-sm">{service.price}</p>
-                    </div>
-                    <div className="bg-muted rounded-lg p-2 text-center">
-                      <p className="text-xs text-muted-foreground">المدة</p>
-                      <p className="font-bold text-sm">{service.duration}</p>
-                    </div>
-                  </div>
+        
                 </CardContent>
                 <CardFooter>
                   <Button asChild className="w-full gap-2">
@@ -521,7 +510,7 @@ export default function ServicesPage() {
         </div>
         <div className="relative h-[400px] rounded-xl overflow-hidden shadow-xl border border-muted">
           <Image
-            src="/services/moving-details.jpg"
+            src="/services/moving-details.png"
             alt="خدمة نقل الأثاث في بشاير الخير"
             fill
             className="object-cover"
@@ -534,7 +523,7 @@ export default function ServicesPage() {
         <div className="space-y-6 order-2 md:order-1">
           <div className="relative h-[400px] rounded-xl overflow-hidden shadow-xl border border-muted">
             <Image
-              src="/services/packing-details.jpg"
+              src="/services/packing-details.png"
               alt="خدمة تغليف الأثاث في بشاير الخير"
               fill
               className="object-cover"
@@ -687,7 +676,7 @@ export default function ServicesPage() {
         </div>
         <div className="relative h-[400px] rounded-xl overflow-hidden shadow-xl border border-muted">
           <Image
-            src="/services/assembly-details.jpg"
+            src="/services/assembly-details.png"
             alt="خدمة فك وتركيب الأثاث في بشاير الخير"
             fill
             className="object-cover"
