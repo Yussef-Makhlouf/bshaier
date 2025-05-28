@@ -11,7 +11,6 @@ import { Textarea } from "@/components/ui/textarea"
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Phone, Mail, MapPin, Clock, Send, MessageCircle, CheckCircle } from "lucide-react"
-import SEOHead from "@/components/seo-head"
 import Link from "next/link"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
@@ -62,13 +61,7 @@ export default function ContactPage() {
 
   return (
     <>
-      <SEOHead
-        title="اتصل بنا - بشاير الخير لنقل الأثاث في الكويت"
-        description="تواصل مع شركة بشاير الخير لنقل الأثاث في الكويت. احصل على عرض سعر مجاني لخدمات نقل وفك وتركيب وتغليف وتخزين الأثاث في جميع مناطق الكويت."
-        keywords="اتصل بنا, بشاير الخير, نقل أثاث الكويت, عرض سعر, نقل عفش, شركة نقل أثاث, أرقام نقل عفش, طلب خدمة نقل اثاث, شركة نقل عفش رخيصة, نقل عفش الكويت واتساب"
-        canonicalUrl="https://bashir-mover.com/contact"
-        ogType="website"
-      />
+
       
       <div id="top">
         <Navbar />
