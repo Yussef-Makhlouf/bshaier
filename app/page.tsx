@@ -7,13 +7,10 @@ import Process from "@/components/process"
 import AboutUs from "@/components/about-us"
 import WhyChooseUs from "@/components/why-choose-us"
 import ServiceAreas from "@/components/service-areas"
-import Testimonials from "@/components/testimonials"
-import Partners from "@/components/partners"
 import Faq from "@/components/faq"
 import QuoteForm from "@/components/quote-form"
-import BlogPreview from "@/components/blog-preview"
 import Footer from "@/components/footer"
-import ContactButtons from "@/components/contact-buttons"
+
 
 export default function Home() {
   return (

@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from "react"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Truck, Package, Home, ShieldCheck, PenToolIcon as Tool, MapPin, ArrowRight, Star, Phone, Section } from "lucide-react"
+import { Truck, Package, Home, ShieldCheck, PenToolIcon as Tool, MapPin, ArrowRight, Star, Phone } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 

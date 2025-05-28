@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     siteName: "بشاير الخير لنقل الأثاث",
     locale: "ar_KW",
     type: "website",
+    
     images: [
       {
         url: "https://www.bashir-mover.com/logo.png",
