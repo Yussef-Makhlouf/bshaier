@@ -35,7 +35,7 @@ export const metadata: Metadata = {
  
   },
   alternates: {
-    canonical: "https://www.bashir-mover.com/areas/{slug*}"
+    canonical: "https://www.bashir-mover.com/areas/"
   },
   robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
   
