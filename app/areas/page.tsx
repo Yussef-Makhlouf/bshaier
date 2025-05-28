@@ -1,12 +1,11 @@
-"use client"
 
+"use client"
 import { useState, useEffect } from "react"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { MapPin, Phone, ArrowRight, Clock, CheckCircle } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import SEOHead from "@/components/seo-head"
 
 // Kuwait areas data with detailed descriptions for SEO
 const areas = [
@@ -182,17 +181,7 @@ export default function AreasPage() {
 
   return (
     <div className="bg-gradient-to-b from-background to-muted">
-      <SEOHead
-        title="مناطق خدمة نقل الأثاث في الكويت - بشاير الخير لنقل العفش"
-        description="نقدم خدمات نقل الأثاث في جميع مناطق الكويت: العاصمة، حولي، الفروانية، الأحمدي، الجهراء، مبارك الكبير. خدمة سريعة، أسعار تنافسية، وفريق محترف"
-        keywords="نقل عفش الكويت, نقل اثاث العاصمة, نقل عفش حولي, نقل اثاث الفروانية, نقل عفش الأحمدي, نقل اثاث الجهراء, نقل عفش مبارك الكبير, شركة نقل أثاث"
-        canonicalUrl="https://www.bashir-mover.com/areas"
-        ogType="website"
-        ogImage="/logo.png"
-        author="بشاير الخير لنقل الأثاث"
-        publisher="بشاير الخير لنقل الأثاث - Bashair Al-Khair Moving Company"
-        robots="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
-      />
+      
       {/* Hero Section */}
       <section className="pb-16 md:pb-24 bg-gradient-to-b from-primary/10 to-background">
         <div className="container px-4 md:px-6">

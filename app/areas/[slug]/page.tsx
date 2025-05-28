@@ -7,8 +7,7 @@ import { Button } from "@/components/ui/button"
 import { MapPin, Phone, ArrowRight, Clock, CheckCircle, Truck, Package, ShieldCheck, PenTool } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import SEOHead from "@/components/seo-head"
-import { Tooltip } from "@radix-ui/react-tooltip"
+
 
 // Kuwait areas data with detailed descriptions for SEO
 const areas = [
@@ -378,15 +377,7 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
 
   return (
     <>
-      <SEOHead
-        title={area.metaTitle}
-        description={area.metaDescription}
-        keywords={area.metaKeywords}
-        canonicalUrl={`https://bashir-mover.com/areas/${area.slug}`}
-        ogType="website"
-        ogImage="/logo.png"
-        twitterHandle="@bashir_mover"
-      />
+
 
       <div className="bg-gradient-to-b from-background to-muted">
         {/* Hero Section */}

@@ -1,9 +1,11 @@
+
+
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
-import SEOHead from "@/components/seo-head"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.bashir-mover.com'),
   title: "مناطق خدمة نقل الأثاث في الكويت - بشاير الخير لنقل العفش",
   description: "نقدم خدمات نقل الأثاث في جميع مناطق الكويت: العاصمة، حولي، الفروانية، الأحمدي، الجهراء، مبارك الكبير. خدمة سريعة، أسعار تنافسية، وفريق محترف",
   keywords: "نقل عفش الكويت, نقل اثاث العاصمة, نقل عفش حولي, نقل اثاث الفروانية, نقل عفش الأحمدي, نقل اثاث الجهراء, نقل عفش مبارك الكبير, شركة نقل أثاث",
@@ -28,7 +30,13 @@ export const metadata: Metadata = {
     title: "مناطق خدمة نقل الأثاث في الكويت - بشاير الخير لنقل العفش",
     description: "نقدم خدمات نقل الأثاث في جميع مناطق الكويت: العاصمة، حولي، الفروانية، الأحمدي، الجهراء، مبارك الكبير. خدمة سريعة، أسعار تنافسية، وفريق محترف",
     images: ["/logo.png"],
+    site: "@bashir_mover",
+    creator: "@bashir_mover",
+ 
   },
+  alternates: {
+    canonical: "https://www.bashir-mover.com/areas"
+  }
 }
 
 export default function AreasLayout({
@@ -38,17 +46,7 @@ export default function AreasLayout({
 }) {
   return (
     <>
-      <SEOHead
-        title="مناطق خدمة نقل الأثاث في الكويت - بشاير الخير لنقل العفش"
-        description="نقدم خدمات نقل الأثاث في جميع مناطق الكويت: العاصمة، حولي، الفروانية، الأحمدي، الجهراء، مبارك الكبير. خدمة سريعة، أسعار تنافسية، وفريق محترف"
-        keywords="نقل عفش الكويت, نقل اثاث العاصمة, نقل عفش حولي, نقل اثاث الفروانية, نقل عفش الأحمدي, نقل اثاث الجهراء, نقل عفش مبارك الكبير, شركة نقل أثاث"
-        canonicalUrl="https://www.bashir-mover.com/areas"
-        ogType="website"
-        ogImage="/logo.png"
-        author="بشاير الخير لنقل الأثاث"
-        publisher="بشاير الخير لنقل الأثاث - Bashair Al-Khair Moving Company"
-        robots="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
-      />
+
       <Navbar />
       <main className="min-h-screen ">
         {children}

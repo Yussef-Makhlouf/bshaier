@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 
 interface LocalBusinessProps {
@@ -72,7 +73,7 @@ interface ServiceProps {
     name: string;
     url: string;
   };
-  areaServed: string[];
+  areaServed: Array<{name: string; "@type": string}>;
   serviceType: string;
 }
 
@@ -93,10 +94,21 @@ export const ServiceJsonLd: React.FC<ServiceProps> = ({
       name: provider.name,
       url: provider.url,
     },
-    areaServed: areaServed.map(area => ({
-      '@type': 'City',
-      name: area,
-    })),
+    areaServed: Array.isArray(areaServed) 
+      ? areaServed.map(area => {
+          if (typeof area === 'string') {
+            return {
+              '@type': 'City',
+              name: area,
+            };
+          } else {
+            return {
+              '@type': area['@type'],
+              name: area.name,
+            };
+          }
+        })
+      : areaServed,
     serviceType,
   };
 

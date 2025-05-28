@@ -1,7 +1,7 @@
-import React from 'react';
-import Head from 'next/head';
-import { LocalBusinessJsonLd, ServiceJsonLd } from './json-ld';
+'use client';
 
+import React from 'react';
+import { NextSeo, LocalBusinessJsonLd } from 'next-seo';
 interface SEOProps {
   title?: string;
   description?: string;
@@ -67,7 +67,7 @@ const SEOHead: React.FC<SEOProps> = ({
   ogType = "website",
   canonicalUrl = "https://www.bashir-mover.com/",
   twitterHandle = "@bashir-mover",
-  alternateLanguages = [],
+
   publishedTime,
   modifiedTime,
   author = "بشاير الخير لنقل الأثاث",
@@ -81,109 +81,138 @@ const SEOHead: React.FC<SEOProps> = ({
   themeColor = "#ffffff",
   manifestPath = "/site.webmanifest",
 }) => {
+  // تحضير بيانات الـ LocalBusiness JSON-LD إذا كانت متوفرة
+  const localBusinessProps = businessData ? {
+    type: 'LocalBusiness',
+    id: canonicalUrl,
+    name: businessData.name,
+    description: businessData.description,
+    url: businessData.url,
+    telephone: businessData.telephone,
+    address: {
+      streetAddress: businessData.address.streetAddress,
+      addressLocality: businessData.address.addressLocality,
+      addressRegion: businessData.address.addressRegion,
+      addressCountry: businessData.address.addressCountry,
+    },
+    geo: {
+      latitude: businessData.geo.latitude.toString(),
+      longitude: businessData.geo.longitude.toString(),
+    },
+    openingHours: businessData.openingHours,
+    priceRange: businessData.priceRange,
+  } : undefined;
+
+  // تحضير بيانات الـ Service JSON-LD إذا كانت متوفرة
+  const serviceProps = serviceData ? {
+    name: serviceData.name,
+    description: serviceData.description,
+    provider: {
+      name: serviceData.provider.name,
+      url: serviceData.provider.url,
+    },
+    areaServed: serviceData.areaServed,
+    serviceType: serviceData.serviceType,
+  } : undefined;
+
   return (
     <>
-      {/* JSON-LD Structured Data */}
+      <NextSeo
+        title={title}
+        description={description}
+        canonical={canonicalUrl}
+        openGraph={{
+          url: canonicalUrl,
+          title: title,
+          description: description,
+          images: [
+            {
+              url: ogImage,
+              width: 1200,
+              height: 630,
+              alt: title,
+            },
+          ],
+          siteName: "بشاير الخير لنقل الأثاث",
+          type: ogType,
+          locale: "ar_KW",
+          article: publishedTime ? {
+            publishedTime: publishedTime,
+            modifiedTime: modifiedTime,
+            authors: [author],
+          } : undefined,
+        }}
+        twitter={{
+          handle: twitterHandle,
+          site: twitterHandle,
+          cardType: 'summary_large_image',
+        }}
+
+        additionalMetaTags={[
+          { name: 'keywords', content: keywords },
+          { name: 'author', content: author },
+          { name: 'publisher', content: publisher },
+          { name: 'robots', content: robots },
+          { name: 'googlebot', content: "index, follow" },
+          { name: 'googlebot-news', content: "index, follow" },
+          { name: 'googlebot-image', content: "index, follow" },
+          { name: 'googlebot-video', content: "index, follow" },
+          { name: 'googlebot-local', content: "index, follow" },
+          { name: 'language', content: "Arabic" },
+          { name: 'revisit-after', content: "7 days" },
+          { name: 'rating', content: "general" },
+          { name: 'mobile-web-app-capable', content: "yes" },
+          { name: 'apple-mobile-web-app-capable', content: "yes" },
+          { name: 'apple-mobile-web-app-status-bar-style', content: "default" },
+          { name: 'apple-mobile-web-app-title', content: "بشاير الخير" },
+          { name: 'format-detection', content: "telephone=no" },
+          { name: 'theme-color', content: themeColor },
+          ...(googleVerification ? [{ name: 'google-site-verification', content: googleVerification }] : []),
+          ...(bingVerification ? [{ name: 'msvalidate.01', content: bingVerification }] : []),
+          ...(yandexVerification ? [{ name: 'yandex-verification', content: yandexVerification }] : []),
+        ]}
+        additionalLinkTags={[
+          { rel: 'icon', href: '/logo.png', type: 'image/png', sizes: '32x32' },
+          { rel: 'icon', href: '/logo.png', type: 'image/png', sizes: '16x16' },
+          { rel: 'apple-touch-icon', href: '/logo.png', sizes: '180x180' },
+          { rel: 'manifest', href: manifestPath },
+          { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+          { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossOrigin: 'anonymous' },
+        ]}
+      />
+      
+      {/* بيانات JSON-LD للشركة المحلية */}
       {businessData && (
-        <LocalBusinessJsonLd 
+        <LocalBusinessJsonLd
+          type="MovingCompany"
+          id={canonicalUrl}
           name={businessData.name}
           description={businessData.description}
           url={businessData.url}
           telephone={businessData.telephone}
-          address={businessData.address}
-          geo={businessData.geo}
-          openingHours={businessData.openingHours}
+          address={{
+            streetAddress: businessData.address.streetAddress,
+            addressLocality: businessData.address.addressLocality,
+            addressRegion: businessData.address.addressRegion,
+            addressCountry: businessData.address.addressCountry,
+          }}
+          geo={{
+            latitude: businessData.geo.latitude.toString(),
+            longitude: businessData.geo.longitude.toString(),
+          }}
+          openingHours={businessData.openingHours.map(hours => {
+            const [day, time] = hours.split(' ');
+            const [opens, closes] = time.split('-');
+            return {
+              dayOfWeek: day,
+              opens: opens,
+              closes: closes,
+            };
+          })}
           priceRange={businessData.priceRange}
         />
       )}
-      
-      {serviceData && (
-        <ServiceJsonLd 
-          name={serviceData.name}
-          description={serviceData.description}
-          provider={serviceData.provider}
-          areaServed={serviceData.areaServed}
-          serviceType={serviceData.serviceType}
-        />
-      )}
-      
-      <Head>
-      {/* Primary Meta Tags */}
-      <title>{title}</title>
-      <meta name="title" content={title} />
-      <meta name="description" content={description} />
-      <meta name="keywords" content={keywords} />
-      <meta name="robots" content={robots} />
-      <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-      <meta name="language" content="Arabic" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="format-detection" content="telephone=no" />
-      {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
-
-      {/* Open Graph / Facebook */}
-      <meta property="og:type" content={ogType} />
-      <meta property="og:url" content={canonicalUrl} />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:image" content={ogImage} />
-      <meta property="og:locale" content="ar_KW" />
-      <meta property="og:site_name" content="بشاير الخير لنقل الأثاث" />
-
-      {/* Twitter */}
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content={canonicalUrl} />
-      <meta property="twitter:title" content={title} />
-      <meta property="twitter:description" content={description} />
-      <meta property="twitter:image" content={ogImage} />
-      <meta property="twitter:site" content={twitterHandle} />
-      {/* Favicon */}
-      <link rel="apple-touch-icon" sizes="180x180" href="/logo.png" />
-      <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/logo.png" />
-      <link rel="manifest" href="/site.webmanifest" />
-      <meta name="msapplication-TileColor" content="#ffffff" />
-      <meta name="msapplication-TileImage" content="/logo.png" />
-      <meta name="theme-color" content="#ffffff" />
-      <meta name="googlebot" content="index, follow" />
-      <meta name="googlebot-news" content="index, follow" />
-      <meta name="googlebot-image" content="index, follow" />
-      <meta name="googlebot-video" content="index, follow" />
-      <meta name="googlebot-local" content="index, follow" />
-      {/* Canonical URL is already defined above */}
-      {/* Additional SEO Enhancements */}
-      {/* <meta name="revisit-after" content="7 days" /> */}
-      <meta name="rating" content="general" />
-      <meta name="mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-capable" content="yes" />
-      <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-      <meta name="apple-mobile-web-app-title" content="بشاير الخير" />
-      
-      {/* Preconnect to important domains */}
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-      
-      {/* Alternate Languages */}
-      {alternateLanguages.map((lang) => (
-        <link key={lang.locale} rel="alternate" hrefLang={lang.locale} href={lang.url} />
-      ))}
-      
-      {/* Article Metadata (if applicable) */}
-      {publishedTime && <meta property="article:published_time" content={publishedTime} />}
-      {modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
-      {author && <meta property="article:author" content={author} />}
-      {author && <meta name="author" content={author} />}
-      {publisher && <meta name="publisher" content={publisher} />}
-      
-      {/* Site Verification Tags */}
-      {googleVerification && <meta name="google-site-verification" content={googleVerification} />}
-      {bingVerification && <meta name="msvalidate.01" content={bingVerification} />}
-      {yandexVerification && <meta name="yandex-verification" content={yandexVerification} />}
-      
-      {/* PWA Related */}
-      <meta name="theme-color" content={themeColor} />
-      <link rel="manifest" href={manifestPath} />
-    </Head>
-  </>
+    </>
   );
 };
 

@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useRef, useEffect } from "react"
+import React, { useState, useRef, useEffect } from "react"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
@@ -146,10 +146,10 @@ export default function Services() {
             className={`grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mb-8 ${isVisible ? "animate-fade-in stagger-1" : "opacity-0"}`}
           >
             {services.map((service) => (
-              <TabsTrigger key={service.id} value={service.id} className="flex flex-col items-center gap-2 py-3">
-                <service.icon className="h-6 w-6" />
-                <span>{service.title}</span>
-              </TabsTrigger>
+                <TabsTrigger key={service.id} value={service.id} className="flex flex-col items-center gap-2 py-3">
+                  {React.createElement(service.icon, { className: "h-6 w-6" })}
+                  <span>{service.title}</span>
+                </TabsTrigger>
             ))}
           </TabsList>
 
@@ -240,7 +240,7 @@ export default function Services() {
               <CardHeader className="pb-2">
                 <div className="flex justify-end mb-2">
                   <div className="bg-primary/10 p-2 rounded-full">
-                    <service.icon className="h-8 w-8 text-primary" />
+                    {React.createElement(service.icon, { className: "h-8 w-8 text-primary" })}
                   </div>
                 </div>
                 <CardTitle>{service.title}</CardTitle>

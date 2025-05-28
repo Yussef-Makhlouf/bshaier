@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Truck, Package, Home, ShieldCheck, PenToolIcon as Tool, MapPin, ArrowRight, Star, Phone, Section } from "lucide-react"
@@ -165,7 +165,7 @@ export default function ServicesPage() {
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-2">
                     <div className="bg-primary/10 p-2 rounded-full">
-                      <service.icon className="h-5 w-5 text-primary" />
+                      {React.createElement(service.icon, { className: "h-5 w-5 text-primary" })}
                     </div>
                     <CardTitle>{service.title}</CardTitle>
                   </div>

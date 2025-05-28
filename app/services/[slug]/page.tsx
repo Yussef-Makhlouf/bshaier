@@ -1,13 +1,12 @@
-"use client"
 
-import { useState, useEffect, use } from "react"
+"use client"
+import React, { useState, useEffect, use } from "react"
 import { notFound } from "next/navigation"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Truck, Package, PenTool, ShieldCheck, MapPin, ArrowRight, Star, Phone, Clock, CheckCircle, Home } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import SEOHead from "@/components/seo-head"
 
 // Services data with detailed descriptions for SEO
 const services = [
@@ -405,11 +404,10 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
     notFound()
   }
 
-  const ServiceIcon = service.icon
-
   return (
 <>
       <div className="bg-gradient-to-b from-background to-muted">
+       
         {/* Hero Section */}
         <section className="py-16 md:py-24 bg-gradient-to-b from-primary/10 to-background">
           <div className="container px-4 md:px-6">
