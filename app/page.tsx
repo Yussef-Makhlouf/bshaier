@@ -10,6 +10,7 @@ import ServiceAreas from "@/components/service-areas"
 import Faq from "@/components/faq"
 import QuoteForm from "@/components/quote-form"
 import Footer from "@/components/footer"
+import BlogPreview from "@/components/blog-preview"
 
 
 export default function Home() {
@@ -29,7 +30,7 @@ export default function Home() {
       {/* <Partners /> */}
       <Faq />
      
-      {/* <BlogPreview /> */}
+      <BlogPreview />
       <Footer />
       {/* <ContactButtons phoneNumber="90905157" /> */}
     </main>

@@ -95,7 +95,7 @@ export default function Navbar() {
                     </div>
                     <nav className="flex flex-col gap-1 p-4 flex-1 overflow-auto items-start">
                       <Link
-                        href="#"
+                        href="/"
                         className="flex items-center gap-2 justify-end p-3 rounded-md hover:bg-muted transition-colors"
                       >
                         الرئيسية
@@ -130,7 +130,12 @@ export default function Navbar() {
                       >
                         مناطق الخدمة
                       </Link>
-           
+                      <Link
+                        href="/blog"
+                        className="flex items-center gap-2 justify-end p-3 rounded-md hover:bg-muted transition-colors"
+                      >
+                        مقالات
+                      </Link>
                       <Link
                         href="tel:+96590905157"
                         className="flex items-center gap-2 justify-end p-3 rounded-md hover:bg-muted transition-colors"
@@ -173,6 +178,9 @@ export default function Navbar() {
                 </Link>
                 <Link href="/services" className="px-3 py-2 text-sm font-medium rounded-md hover:bg-muted transition-colors">
                   خدماتنا
+                </Link>
+                <Link href="/blog" className="px-3 py-2 text-sm font-medium rounded-md hover:bg-muted transition-colors">
+                  مقالات
                 </Link>
                 <Link href="/areas" className="px-3 py-2 text-sm font-medium rounded-md hover:bg-muted transition-colors">
                   مناطق الخدمة
