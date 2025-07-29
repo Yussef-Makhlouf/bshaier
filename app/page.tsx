@@ -11,6 +11,7 @@ import Faq from "@/components/faq"
 import QuoteForm from "@/components/quote-form"
 import Footer from "@/components/footer"
 import BlogPreview from "@/components/blog-preview"
+import QuickLinks from "@/components/quick-links"
 
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <Process />
       <AboutUs />
       <WhyChooseUs />
+      <QuickLinks />
       <QuoteForm />
       <ServiceAreas />
 

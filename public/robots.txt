@@ -18,8 +18,8 @@ Allow: /*.js$
 Allow: /*.css$
 
 # Host
-Host: https://bashir-mover.com
+Host: https://www.bashir-mover.com
 
 # Sitemaps
-Sitemap: https://bashir-mover.com/sitemap.xml
+Sitemap: https://www.bashir-mover.com/sitemap.xml
 

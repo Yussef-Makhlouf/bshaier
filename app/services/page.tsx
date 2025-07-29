@@ -125,13 +125,13 @@ export default function ServicesPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <Button asChild size="lg" className="gap-2">
-                <Link href="tel:90905157">
+                <Link href="tel:90905157" aria-label="رقم الهاتف" aria-labelledby="phone-number" title="رقم الهاتف" >
                   <Phone className="h-5 w-5" />
                   اتصل بنا الآن
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <Link href="#all-services">
+                <Link href="#all-services" aria-label="عرض جميع الخدمات" aria-labelledby="all-services" title="عرض جميع الخدمات" >
                   عرض جميع الخدمات
                 </Link>
               </Button>
@@ -159,6 +159,8 @@ export default function ServicesPage() {
                     alt={service.title}
                     fill
                     className="object-cover transition-transform duration-300 hover:scale-105"
+                    title="صورة للخدمة"
+                    loading="lazy"
                   />
                  
                 </div>
@@ -187,7 +189,7 @@ export default function ServicesPage() {
                 </CardContent>
                 <CardFooter>
                   <Button asChild className="w-full gap-2">
-                    <Link href={`/services/${service.slug}`}>
+                    <Link href={`/services/${service.slug}`} aria-label={`تفاصيل الخدمة ${service.title}`} title={`تفاصيل الخدمة ${service.title}`}>
                       تفاصيل الخدمة
                       <ArrowRight className="h-4 w-4" />
                     </Link>
@@ -210,7 +212,7 @@ export default function ServicesPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Link href="/areas/capital" className="group">
+            <Link href="/areas/capital" className="group" aria-label="محافظة العاصمة" title="محافظة العاصمة" >
               <Card className="overflow-hidden h-full transition-all duration-300 hover:shadow-lg hover:border-primary">
                 <CardHeader className="pb-2">
                   <CardTitle className="group-hover:text-primary transition-colors">محافظة العاصمة</CardTitle>
@@ -221,7 +223,7 @@ export default function ServicesPage() {
                 </CardContent>
               </Card>
             </Link>
-            <Link href="/areas/hawalli" className="group">
+            <Link href="/areas/hawalli" className="group" aria-label="محافظة حولي" title="محافظة حولي" >
               <Card className="overflow-hidden h-full transition-all duration-300 hover:shadow-lg hover:border-primary">
                 <CardHeader className="pb-2">
                   <CardTitle className="group-hover:text-primary transition-colors">محافظة حولي</CardTitle>
@@ -232,7 +234,7 @@ export default function ServicesPage() {
                 </CardContent>
               </Card>
             </Link>
-            <Link href="/areas/ahmadi" className="group">
+            <Link href="/areas/ahmadi" className="group" aria-label="محافظة الأحمدي" title="محافظة الأحمدي" >
               <Card className="overflow-hidden h-full transition-all duration-300 hover:shadow-lg hover:border-primary">
                 <CardHeader className="pb-2">
                   <CardTitle className="group-hover:text-primary transition-colors">محافظة الأحمدي</CardTitle>
@@ -243,7 +245,7 @@ export default function ServicesPage() {
                 </CardContent>
               </Card>
             </Link>
-            <Link href="/areas/farwaniya" className="group">
+            <Link href="/areas/farwaniya" className="group" aria-label="محافظة الفروانية" aria-labelledby="farwaniya-area" title="محافظة الفروانية" >
               <Card className="overflow-hidden h-full transition-all duration-300 hover:shadow-lg hover:border-primary">
                 <CardHeader className="pb-2">
                   <CardTitle className="group-hover:text-primary transition-colors">محافظة الفروانية</CardTitle>
@@ -254,7 +256,7 @@ export default function ServicesPage() {
                 </CardContent>
               </Card>
             </Link>
-            <Link href="/areas/jahra" className="group">
+            <Link href="/areas/jahra" className="group" aria-label="محافظة الجهراء" aria-describedby="نقل عفش و أثاث محافظة الجهراء" aria-labelledby="نقل عفش و أثاث محافظة الجهراء" aria-details="نقل عفش و أثاث محافظة الجهراء" title="محافظة الجهراء">
               <Card className="overflow-hidden h-full transition-all duration-300 hover:shadow-lg hover:border-primary">
                 <CardHeader className="pb-2">
                   <CardTitle className="group-hover:text-primary transition-colors">محافظة الجهراء</CardTitle>
@@ -265,7 +267,7 @@ export default function ServicesPage() {
                 </CardContent>
               </Card>
             </Link>
-            <Link href="/areas/mubarak" className="group">
+            <Link href="/areas/mubarak" className="group" aria-label="Mubarak Al-Kabeer" aria-describedby="Mubarak Al-Kabeer" aria-labelledby="Mubarak Al-Kabeer" aria-details="محافظة مبارك الكبير" title="محافظة مبارك الكبير">
               <Card className="overflow-hidden h-full transition-all duration-300 hover:shadow-lg hover:border-primary">
                 <CardHeader className="pb-2">
                   <CardTitle className="group-hover:text-primary transition-colors">محافظة مبارك الكبير</CardTitle>
@@ -280,7 +282,7 @@ export default function ServicesPage() {
 
           <div className="flex justify-center mt-12">
             <Button asChild size="lg">
-              <Link href="/areas">
+              <Link href="/areas" aria-label="عرض جميع المناطق" aria-labelledby="عرض جميع المناطق" title="عرض جميع المناطق">
                 عرض جميع المناطق
               </Link>
             </Button>
@@ -296,15 +298,15 @@ export default function ServicesPage() {
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
               تواصل معنا للحصول على خدمات نقل الأثاث بأعلى مستويات الجودة وبأسعار تنافسية
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 mt-8">
+            <div className="flex flex-col sm:flex-row gap-4 mt-8" aria-label="اتصل بنا الآن" aria-labelledby="اتصل بنا الآن" title="اتصل بنا الآن">
               <Button asChild size="lg" className="gap-2">
-                <Link href="tel:90905157">
+                <Link href="tel:90905157" aria-label="اتصل بنا الآن" aria-labelledby="اتصل بنا الآن" title="اتصل بنا الآن">
                   <Phone className="h-5 w-5" />
                   اتصل بنا الآن
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg">
-                <Link href="https://wa.me/96590905157">
+              <Button asChild variant="outline" size="lg" className="gap-2" aria-label="تواصل عبر الواتساب" aria-labelledby="تواصل عبر الواتساب" title="تواصل عبر الواتساب">
+                <Link href="https://wa.me/96590905157" aria-label="تواصل عبر الواتساب" aria-labelledby="تواصل عبر الواتساب" title="تواصل عبر الواتساب">
                   تواصل عبر الواتساب
                 </Link>
               </Button>
@@ -514,6 +516,8 @@ export default function ServicesPage() {
             alt="خدمة نقل الأثاث في بشاير الخير"
             fill
             className="object-cover"
+            title="خدمة نقل الأثاث في بشاير الخير"
+            loading="lazy"
           />
         </div>
       </div>
@@ -527,6 +531,8 @@ export default function ServicesPage() {
               alt="خدمة تغليف الأثاث في بشاير الخير"
               fill
               className="object-cover"
+              title="خدمة تغليف الأثاث في بشاير الخير"
+              loading="lazy"
             />
           </div>
         </div>
@@ -680,6 +686,8 @@ export default function ServicesPage() {
             alt="خدمة فك وتركيب الأثاث في بشاير الخير"
             fill
             className="object-cover"
+            loading="lazy"
+            title="خدمة فك وتركيب الأثاث في بشاير الخير"
           />
         </div>
       </div>

@@ -203,7 +203,7 @@ export default function AreasPage() {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <Link href="#all-areas">
+                <Link href="#all-areas" className="gap-2" aria-label="عرض جميع النتائج" title="عرض جميع النتائج"> 
                   عرض جميع المناطق
                 </Link>
               </Button>
@@ -277,7 +277,7 @@ export default function AreasPage() {
                 </CardContent>
                 <CardFooter className="pt-2 border-t border-muted">
                   <Button asChild className="w-full gap-2 transition-all duration-300 hover:scale-[1.02]">
-                    <Link href={`/areas/${area.slug}`}>
+                    <Link href={`/areas/${area.slug}`} aria-label="تفاصيل المنطقة" title="تفاصيل المنطقة" >
                       تفاصيل المنطقة
                       <ArrowRight className="h-4 w-4" />
                     </Link>
@@ -338,7 +338,7 @@ export default function AreasPage() {
         </CardContent>
         <CardFooter>
           <Button asChild className="w-full gap-2">
-            <Link href="tel:90905157">
+            <Link href="tel:90905157" aria-label="طلب خدمة فك وتركيب الأثاث" title="طلب خدمة فك وتركيب الأثاث">
               طلب خدمة الفك والتركيب
               <ArrowRight className="h-4 w-4" />
             </Link>
@@ -382,7 +382,7 @@ export default function AreasPage() {
         </CardContent>
         <CardFooter>
           <Button asChild className="w-full gap-2">
-            <Link href="tel:90905157">
+            <Link href="tel:90905157" aria-label="طلب خدمة تغليف الأثاث" title="طلب خدمة تغليف الأثاث">
               طلب خدمة التغليف
               <ArrowRight className="h-4 w-4" />
             </Link>
@@ -425,8 +425,8 @@ export default function AreasPage() {
           </ul>
         </CardContent>
         <CardFooter>
-          <Button asChild className="w-full gap-2">
-            <Link href="tel:90905157">
+          <Button asChild className="w-full gap-2"  aria-label="طلب خدمة نقل الأثاث" title="طلب خدمة نقل الأثاث">
+            <Link href="tel:90905157" aria-label="طلب خدمة نقل الأثاث" title="طلب خدمة نقل الأثاث">
               طلب خدمة النقل
               <ArrowRight className="h-4 w-4" />
             </Link>
@@ -471,8 +471,8 @@ export default function AreasPage() {
           </ul>
         </CardContent>
         <CardFooter>
-          <Button asChild className="w-full gap-2">
-            <Link href="tel:90905157">
+          <Button asChild className="w-full gap-2" aria-label="طلب خدمة التخزين" title="طلب خدمة التخزين">
+            <Link href="tel:90905157" aria-label="طلب خدمة التخزين" title="طلب خدمة التخزين">
               طلب خدمة التخزين
               <ArrowRight className="h-4 w-4" />
             </Link>
@@ -515,8 +515,8 @@ export default function AreasPage() {
           </ul>
         </CardContent>
         <CardFooter>
-          <Button asChild className="w-full gap-2">
-            <Link href="tel:90905157">
+          <Button asChild className="w-full gap-2" aria-label="طلب نقل مكتب" title="طلب نقل مكتب">
+            <Link href="tel:90905157" aria-label="طلب نقل مكتب" title="طلب نقل مكتب">
               طلب نقل مكتب
               <ArrowRight className="h-4 w-4" />
             </Link>
@@ -559,8 +559,8 @@ export default function AreasPage() {
           </ul>
         </CardContent>
         <CardFooter>
-          <Button asChild className="w-full gap-2">
-            <Link href="tel:90905157">
+          <Button asChild className="w-full gap-2" aria-label="طلب نقل المقتنيات الثمينة" title="طلب نقل المقتنيات الثمينة">
+            <Link href="tel:90905157" aria-label="طلب نقل المقتنيات الثمينة" title="طلب نقل المقتنيات الثمينة">
               طلب نقل المقتنيات الثمينة
               <ArrowRight className="h-4 w-4" />
             </Link>
@@ -717,6 +717,7 @@ export default function AreasPage() {
             alt="نقل الأثاث في محافظة العاصمة"
             fill
             className="object-cover"
+            loading="lazy"
           />
           <div 
             className="absolute top-0 left-0 w-full h-full opacity-20"
@@ -732,6 +733,8 @@ export default function AreasPage() {
             src="/areas/car2.jpg"
             alt="نقل الأثاث في محافظة حولي"
             fill
+            loading="lazy"
+            
             className="object-cover"
           />
           <div 

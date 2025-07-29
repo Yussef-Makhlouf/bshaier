@@ -3,7 +3,7 @@
   "short_name": "بشاير الخير",
   "description": "أفضل شركة نقل عفش في الكويت ✓ خدمة 24 ساعة ✓ أسعار تنافسية ✓ فك وتركيب وتغليف احترافي ✓ نقل آمن وسريع لجميع محافظات الكويت بدون تكسير",
   "categories": ["moving", "furniture", "services", "kuwait", "relocation", "packing"],
-  "url": "https://bashir-mover.com",
+  "url": "https://www.bashir-mover.com",
   "telephone": "+96590905157",
   "address": {
     "streetAddress": "الكويت",
@@ -60,17 +60,17 @@
   ],
   "icons": [
     {
-      "src": "/favicon-16x16.png",
+      "src": "/logo.png",
       "sizes": "16x16",
       "type": "image/png"
     },
     {
-      "src": "/favicon-32x32.png",
+      "src": "/logo.png",
       "sizes": "32x32",
       "type": "image/png"
     },
     {
-      "src": "/favicon-192x192.png",
+      "src": "/logo.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
@@ -88,7 +88,7 @@
       "purpose": "any maskable"
     },
     {
-      "src": "/apple-touch-icon.png",
+      "src": "/logo.png",
       "sizes": "180x180",
       "type": "image/png",
       "purpose": "apple-touch-icon"

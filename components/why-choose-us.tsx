@@ -118,7 +118,7 @@ export default function WhyChooseUs() {
                 </div>
               </div>
 
-              <div className="flex gap-4">
+              <div className="flex gap-4" >
                 <div className="bg-primary/10 rounded-full p-3 h-12 w-12 flex items-center justify-center flex-shrink-0">
                   <ThumbsUp className="h-6 w-6 text-primary" />
                 </div>

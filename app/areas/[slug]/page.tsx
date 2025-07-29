@@ -399,13 +399,13 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button asChild size="lg" className="gap-2">
-                    <Link href="tel:90905157">
+                    <Link href="tel:90905157" aria-label="اتصل بنا الآن" title="اتصل بنا الآن">
                       <Phone className="h-5 w-5" />
                       اتصل بنا الآن
                     </Link>
                   </Button>
                   <Button asChild variant="outline" size="lg">
-                    <Link href="https://wa.me/96590905157">
+                    <Link href="https://wa.me/96590905157" aria-label="تواصل عبر الواتساب" title="تواصل عبر الواتساب">
                       تواصل عبر الواتساب
                     </Link>
                   </Button>
@@ -487,7 +487,7 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
               {services.map((service, index) => {
                 const ServiceIcon = service.icon
                 return (
-                  <Link key={index} href={`/services/${service.slug}`} className="group">
+                  <Link key={index} href={`/services/${service.slug}`} className="group" aria-label={`تفاصيل الخدمة ${service.title}`} title={`تفاصيل الخدمة ${service.title}`}>
                     <Card className={`overflow-hidden h-full transition-all duration-300 hover:shadow-lg hover:border-primary ${isVisible ? "animate-fade-in" : "opacity-0"}`} style={{ animationDelay: `${index * 0.1}s` }}>
                       <CardContent className="p-6">
                         <div className="bg-primary/10 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
@@ -540,7 +540,7 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
               {areas.filter(a => a.slug !== area.slug).map((otherArea, index) => (
-                <Link key={index} href={`/areas/${otherArea.slug}`} className="group">
+                <Link key={index} href={`/areas/${otherArea.slug}`} className="group" aria-label={otherArea.name} title={otherArea.name}>
                   <div 
                     className="bg-background rounded-lg p-4 text-center hover:shadow-md transition-all border"
                     style={{ borderColor: `${otherArea.color}30` }}
@@ -569,13 +569,13 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mt-8">
                 <Button asChild size="lg" className="gap-2">
-                  <Link href="tel:90905157">
+                  <Link href="tel:90905157" aria-label="اتصل بنا الآن" title="اتصل بنا الآن">
                     <Phone className="h-5 w-5" />
                     اتصل بنا الآن
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
-                  <Link href="https://wa.me/96590905157">
+                  <Link href="https://wa.me/96590905157" aria-label="تواصل عبر الواتساب" title="تواصل عبر الواتساب">
                     تواصل عبر الواتساب
                   </Link>
                 </Button>

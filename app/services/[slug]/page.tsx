@@ -1,4 +1,3 @@
-
 "use client"
 import React, { useState, useEffect, use } from "react"
 import { notFound } from "next/navigation"
@@ -434,13 +433,13 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button asChild size="lg" className="gap-2">
-                    <Link href="tel:90905157">
+                    <Link href="tel:90905157" aria-label="اتصل بنا الآن" title="اتصل بنا الآن">
                       <Phone className="h-5 w-5" />
                       اتصل بنا الآن
                     </Link>
                   </Button>
                   <Button asChild variant="outline" size="lg">
-                    <Link href="https://wa.me/96590905157">
+                    <Link href="https://wa.me/96590905157" aria-label="تواصل عبر الواتساب" title="تواصل عبر الواتساب">
                       تواصل عبر الواتساب
                     </Link>
                   </Button>
@@ -542,43 +541,43 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-              <Link href="/areas/capital" className="bg-background rounded-lg p-4 text-center hover:shadow-md transition-all">
+              <Link href="/areas/capital" className="bg-background rounded-lg p-4 text-center hover:shadow-md transition-all" aria-label="محافظة العاصمة" title="محافظة العاصمة">
                 <MapPin className="h-6 w-6 mx-auto mb-2 text-primary" />
                 <h3 className="font-bold">العاصمة</h3>
               </Link>
-              <Link href="/areas/hawalli" className="bg-background rounded-lg p-4 text-center hover:shadow-md transition-all">
+              <Link href="/areas/hawalli" className="bg-background rounded-lg p-4 text-center hover:shadow-md transition-all" aria-label="محافظة حولي" title="محافظة حولي">
                 <MapPin className="h-6 w-6 mx-auto mb-2 text-primary" />
                 <h3 className="font-bold">حولي</h3>
               </Link>
-              <Link href="/areas/ahmadi" className="bg-background rounded-lg p-4 text-center hover:shadow-md transition-all">
+              <Link href="/areas/ahmadi" className="bg-background rounded-lg p-4 text-center hover:shadow-md transition-all" aria-label="محافظة الأحمدي" title="محافظة الأحمدي">
                 <MapPin className="h-6 w-6 mx-auto mb-2 text-primary" />
                 <h3 className="font-bold">أحمدية</h3>
               </Link>
-              <Link href="/areas/ahmadi" className="bg-background rounded-lg p-4 text-center hover:shadow-md transition-all">
+              <Link href="/areas/ahmadi" className="bg-background rounded-lg p-4 text-center hover:shadow-md transition-all" aria-label="محافظة الأحمدي" title="محافظة الأحمدي">
                 <MapPin className="h-6 w-6 mx-auto mb-2 text-primary" />
                 <h3 className="font-bold">أحمدية</h3>
               </Link>
-              <Link href="/areas/ahmadi" className="bg-background rounded-lg p-4 text-center hover:shadow-md transition-all">
+              <Link href="/areas/ahmadi" className="bg-background rounded-lg p-4 text-center hover:shadow-md transition-all" aria-label="محافظة الأحمدي" title="محافظة الأحمدي">
                 <MapPin className="h-6 w-6 mx-auto mb-2 text-primary" />
                 <h3 className="font-bold">أحمدية</h3>
               </Link>
-              <Link href="/areas/ahmadi" className="bg-background rounded-lg p-4 text-center hover:shadow-md transition-all">
+              <Link href="/areas/ahmadi" className="bg-background rounded-lg p-4 text-center hover:shadow-md transition-all" aria-label="محافظة الأحمدي" title="محافظة الأحمدي">
                 <MapPin className="h-6 w-6 mx-auto mb-2 text-primary" />
                 <h3 className="font-bold">أحمدية</h3>
               </Link>
-              <Link href="/areas/ahmadi" className="bg-background rounded-lg p-4 text-center hover:shadow-md transition-all">
+              <Link href="/areas/ahmadi" className="bg-background rounded-lg p-4 text-center hover:shadow-md transition-all" aria-label="محافظة الأحمدي" title="محافظة الأحمدي">
                 <MapPin className="h-6 w-6 mx-auto mb-2 text-primary" />
                 <h3 className="font-bold">أحمدية</h3>
               </Link>
-              <Link href="/areas/ahmadi" className="bg-background rounded-lg p-4 text-center hover:shadow-md transition-all">
+              <Link href="/areas/ahmadi" className="bg-background rounded-lg p-4 text-center hover:shadow-md transition-all" aria-label="محافظة الأحمدي" title="محافظة الأحمدي">
                 <MapPin className="h-6 w-6 mx-auto mb-2 text-primary" />
                 <h3 className="font-bold">أحمدية</h3>
               </Link>
-              <Link href="/areas/ahmadi" className="bg-background rounded-lg p-4 text-center hover:shadow-md transition-all">
+              <Link href="/areas/ahmadi" className="bg-background rounded-lg p-4 text-center hover:shadow-md transition-all" aria-label="محافظة الأحمدي" title="محافظة الأحمدي">
                 <MapPin className="h-6 w-6 mx-auto mb-2 text-primary" />
                 <h3 className="font-bold">أحمدية</h3>
               </Link>
-              <Link href="/areas/ahmadi" className="bg-background rounded-lg p-4 text-center hover:shadow-md transition-all">
+              <Link href="/areas/ahmadi" className="bg-background rounded-lg p-4 text-center hover:shadow-md transition-all" aria-label="محافظة الأحمدي" title="محافظة الأحمدي">
                 <MapPin className="h-6 w-6 mx-auto mb-2 text-primary" />
                 <h3 className="font-bold">أحمدية</h3>
               </Link>
@@ -682,8 +681,8 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
                     <Phone className="h-12 w-12 text-primary" />
                     <h3 className="text-xl font-bold">اتصل بنا مباشرة</h3>
                     <p className="text-muted-foreground">تواصل معنا هاتفياً للحصول على خدمة فورية وعرض سعر مجاني</p>
-                    <Button asChild size="lg" className="gap-2 w-full">
-                      <Link href="tel:90905157">
+                    <Button asChild size="lg" className="gap-2 w-full" aria-label="اتصل بنا الآن" title="اتصل بنا الآن">
+                      <Link href="tel:90905157" aria-label="اتصل بنا الآن" title="اتصل بنا الآن">
                         <Phone className="h-5 w-5" />
                         90905157
                       </Link>
@@ -696,8 +695,8 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
                     <CheckCircle className="h-12 w-12 text-primary" />
                     <h3 className="text-xl font-bold">طلب عرض سعر</h3>
                     <p className="text-muted-foreground">أرسل لنا تفاصيل طلبك للحصول على عرض سعر مخصص لاحتياجاتك</p>
-                    <Button asChild variant="outline" size="lg" className="w-full">
-                      <Link href="/contact">
+                    <Button asChild variant="outline" size="lg" className="w-full" aria-label="طلب عرض سعر" title="طلب عرض سعر">
+                      <Link href="/contact" aria-label="طلب عرض سعر" title="طلب عرض سعر">
                         طلب عرض سعر
                       </Link>
                     </Button>
@@ -709,19 +708,19 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
                 <p className="text-muted-foreground mb-4">أو تواصل معنا عبر وسائل التواصل الاجتماعي</p>
                 <div className="flex gap-4">
                   <Button asChild variant="outline" size="icon">
-                    <Link href="https://wa.me/96590905157" target="_blank">
+                    <Link href="https://wa.me/96590905157" aria-label="تواصل عبر الواتساب" title="تواصل عبر الواتساب">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-message-circle"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
                       <span className="sr-only">واتساب</span>
                     </Link>
                   </Button>
                   <Button asChild variant="outline" size="icon">
-                    <Link href="https://www.instagram.com/bashair_mover/" target="_blank">
+                    <Link href="https://www.instagram.com/bashair_mover/" target="_blank" aria-label="تواصل عبر انستغرام" title="تواصل عبر انستغرام">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                       <span className="sr-only">انستغرام</span>
                     </Link>
                   </Button>
                   <Button asChild variant="outline" size="icon">
-                    <Link href="https://twitter.com/bashair_mover" target="_blank">
+                    <Link href="https://twitter.com/bashair_mover" target="_blank" aria-label="تواصل عبر تويتر" title="تواصل عبر تويتر">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
                       <span className="sr-only">تويتر</span>
                     </Link>

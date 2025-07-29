@@ -137,6 +137,18 @@ export default function Navbar() {
                         مقالات
                       </Link>
                       <Link
+                        href="/nuqud-nakl-athath"
+                        className="flex items-center gap-2 justify-end p-3 rounded-md hover:bg-muted transition-colors"
+                      >
+                        نصائح النقل
+                      </Link>
+                      <Link
+                        href="/irshadat-taghleef-athath"
+                        className="flex items-center gap-2 justify-end p-3 rounded-md hover:bg-muted transition-colors"
+                      >
+                        إرشادات التغليف
+                      </Link>
+                      <Link
                         href="tel:+96590905157"
                         className="flex items-center gap-2 justify-end p-3 rounded-md hover:bg-muted transition-colors"
                       >
@@ -184,6 +196,12 @@ export default function Navbar() {
                 </Link>
                 <Link href="/areas" className="px-3 py-2 text-sm font-medium rounded-md hover:bg-muted transition-colors">
                   مناطق الخدمة
+                </Link>
+                <Link href="/nuqud-nakl-athath" className="px-3 py-2 text-sm font-medium rounded-md hover:bg-muted transition-colors">
+                  نصائح النقل
+                </Link>
+                <Link href="/irshadat-taghleef-athath" className="px-3 py-2 text-sm font-medium rounded-md hover:bg-muted transition-colors">
+                  إرشادات التغليف
                 </Link>
                 <Link href="#process" className="px-3 py-2 text-sm font-medium rounded-md hover:bg-muted transition-colors">
                   مراحل العمل

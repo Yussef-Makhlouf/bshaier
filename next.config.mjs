@@ -16,7 +16,7 @@ const nextConfig = {
   },
   trailingSlash: true,
   reactStrictMode: true,
-  
+
   // Note: generateStaticParams is used in page components instead of exportPathMap
   // for app directory compatibility
 }
