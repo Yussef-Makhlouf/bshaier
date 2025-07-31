@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
   
   return {
-    title: `${post.title} | بشاير الخير لنقل الأثاث`,
+    title: `${post.title} | نقل أثاث الكويت | نقل عفش احترافي | 90905157 | بشاير الخير`,
     description: post.excerpt,
     keywords: post.tags,
     alternates: {
@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     robots: "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
     openGraph: {
-      title: post.title,
+      title: `${post.title} | نقل أثاث الكويت | نقل عفش احترافي | 90905157 | بشاير الخير`,
       description: post.excerpt,
       images: [{ url: post.image }],
       type: 'article',
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: post.title,
+      title: `${post.title} | نقل أثاث الكويت | نقل عفش احترافي | 90905157 | بشاير الخير`,
       description: post.excerpt,
       images: [post.image],
       site: "@bashir_mover",
