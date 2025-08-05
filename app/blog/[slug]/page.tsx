@@ -159,10 +159,10 @@ export default function BlogPostPage({ params }: Props) {
               <Badge className="text-sm">{post.category}</Badge>
               <Badge variant="outline" className="text-sm">{post.date}</Badge>
             </div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
+            <h1 className="text-3xl md:text-3xl lg:text-3xl font-bold tracking-tight ">
               {post.title}
             </h1>
-            <p className="text-lg text-muted-foreground max-w-[800px] mx-auto">
+            <p className="text-lg text-black max-w-[800px] mx-auto">
               {post.excerpt}
             </p>
             <div className="flex items-center justify-center gap-4 pt-2">
@@ -394,7 +394,7 @@ export default function BlogPostPage({ params }: Props) {
                       </CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-muted-foreground line-clamp-3">{relatedPost.excerpt}</p>
+                      <p className="text-black line-clamp-3">{relatedPost.excerpt}</p>
                     </CardContent>
                   </Card>
                 </Link>
@@ -409,7 +409,7 @@ export default function BlogPostPage({ params }: Props) {
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <h2 className="text-3xl font-bold tracking-tight">هل تحتاج إلى خدمات نقل أثاث احترافية؟</h2>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-black text-lg">
               شركة بشاير الخير توفر لك خدمات نقل وفك وتركيب وتغليف الأثاث بأعلى مستويات الجودة وأفضل الأسعار
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">

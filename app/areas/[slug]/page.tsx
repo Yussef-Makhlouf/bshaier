@@ -378,7 +378,6 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
   return (
     <>
 
-
       <div className="bg-gradient-to-b from-background to-muted">
         {/* Hero Section */}
         <section className="py-16 md:py-24 bg-gradient-to-b from-primary/10 to-background">

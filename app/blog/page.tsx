@@ -22,7 +22,7 @@ export default function BlogPage() {
   // State for search functionality
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredPosts, setFilteredPosts] = useState(blogPosts);
-  const [visiblePosts, setVisiblePosts] = useState(6); // Number of posts to show initially
+  const [visiblePosts, setVisiblePosts] = useState(25); // Number of posts to show initially
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
 
@@ -78,10 +78,10 @@ export default function BlogPage() {
         <div className="container relative z-10 px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="text-right space-y-6">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-relaxed" title='مدونة بشاير الخير'>
+              <h1 className="text-4xl md:text-4xl lg:text-4xl font-bold tracking-tight leading-relaxed" title='مدونة بشاير الخير'>
                 مدونة بشاير الخير <span className="text-primary">لنقل الأثاث</span>
               </h1>
-              <p className="text-2xl text-muted-foreground max-w-[600px] mr-auto leading-loose">
+              <p className="text-2xl text-black max-w-[600px] mr-auto leading-loose">
                 نصائح وإرشادات ومقالات متخصصة في مجال نقل وتغليف وتخزين الأثاث في الكويت
               </p>
               <div className="flex items-center justify-end gap-6 pt-6">
@@ -192,7 +192,7 @@ export default function BlogPage() {
                         <CardTitle className="line-clamp-2 group-hover:text-primary transition-colors text-xl font-bold leading-relaxed">{post.title}</CardTitle>
                       </CardHeader>
                       <CardContent className="px-0">
-                        <p className="text-muted-foreground line-clamp-3 text-base leading-loose">{post.excerpt}</p>
+                        <p className="text-black line-clamp-3 text-base leading-loose">{post.excerpt}</p>
                       </CardContent>
                       <CardFooter className="flex justify-between items-center px-0 pt-4">
                         <div className="flex gap-2">
@@ -240,7 +240,7 @@ export default function BlogPage() {
                             <CardTitle className="line-clamp-2 group-hover:text-primary transition-colors text-xl font-bold leading-relaxed">{post.title}</CardTitle>
                           </CardHeader>
                           <CardContent className="px-0">
-                            <p className="text-muted-foreground line-clamp-3 text-base leading-loose">{post.excerpt}</p>
+                            <p className="text-black line-clamp-3 text-base leading-loose">{post.excerpt}</p>
                           </CardContent>
                           <CardFooter className="flex justify-between items-center px-0 pt-4">
                             <div className="flex gap-2">
