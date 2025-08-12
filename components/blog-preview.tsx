@@ -9,7 +9,7 @@ const blogPosts = [
     title: "نصائح لتغليف الأثاث الحساس أثناء النقل",
     excerpt: "تعرف على أفضل الطرق لتغليف الأثاث الحساس والقطع الثمينة لحمايتها أثناء النقل من الخدوش والكسر.",
     date: "15 أبريل 2023",
-    image: "/blog/",
+    image: "/blog/eco-friendly-moving.avif",
     category: "نصائح وإرشادات",
   },
   {
@@ -17,7 +17,7 @@ const blogPosts = [
     title: "كيف تختار شركة نقل أثاث موثوقة في الكويت",
     excerpt: "دليل شامل لاختيار شركة نقل أثاث موثوقة في الكويت، مع النقاط الهامة التي يجب مراعاتها قبل التعاقد.",
     date: "3 مارس 2023",
-    image: "/placeholder.svg?height=200&width=400",
+    image: "/blog/furniture-assembly.avif",
     category: "دليل المستهلك",
   },
   {
@@ -25,7 +25,7 @@ const blogPosts = [
     title: "أفضل طرق ترتيب الأثاث في المنزل الجديد",
     excerpt: "تعرف على أفضل الطرق لترتيب الأثاث في منزلك الجديد بطريقة عملية وجمالية تناسب مساحة المنزل.",
     date: "20 فبراير 2023",
-    image: "/placeholder.svg?height=200&width=400",
+    image: "/blog/furniture-storage copy.avif",
     category: "ديكور وترتيب",
   },
 ]

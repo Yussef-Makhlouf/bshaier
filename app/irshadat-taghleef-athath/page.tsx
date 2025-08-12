@@ -684,7 +684,7 @@ export default function PackingGuidePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-secondary to-secondary/90 text-white">
+      <section className="py-16 bg-gradient-to-r from-primary to-primary/90 text-white">
         <div className="container px-4 md:px-6 text-center">
           <h2 className="text-3xl font-bold mb-4">
             احصل على خدمة تغليف احترافية
@@ -711,8 +711,8 @@ export default function PackingGuidePage() {
               asChild
             >
               <Link href="/services" className="text-black">
+                <span className="text-black">عرض خدماتنا</span>
                 <ArrowRight className="h-5 w-5 text-black" />
-             عرض خدماتنا
               </Link>
             </Button>
           </div>

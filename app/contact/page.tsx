@@ -12,8 +12,6 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Phone, Mail, MapPin, Clock, Send, MessageCircle, CheckCircle } from "lucide-react"
 import Link from "next/link"
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
 
 // Form validation schema
 const formSchema = z.object({
@@ -60,14 +58,7 @@ export default function ContactPage() {
   }
 
   return (
-    <>
-
-      
-      <div id="top">
-        <Navbar />
-      </div>
-
-      <div className="bg-gradient-to-b from-background to-muted">
+    <div className="bg-gradient-to-b from-background to-muted">
         {/* Hero Section */}
         <section className="py-16 md:py-24 bg-gradient-to-b from-primary/10 to-background">
           <div className="container px-4 md:px-6">
@@ -329,10 +320,6 @@ export default function ContactPage() {
             </div>
           </div>
         </section>
-      </div>
-            
-      <Footer />
-
-    </>
+    </div>
   )
 }
